@@ -30,32 +30,48 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo118 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo119 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo120 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo121 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo122 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo123 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo124 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo125 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo126 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo127 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo128 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo129 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo130 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings10 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
-            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions10 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings10);
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery10 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo1 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo2 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo3 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo4 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo5 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo6 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo7 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo8 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo9 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo10 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo11 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo12 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo13 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings1 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
+            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions1 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings1);
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo14 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo15 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo16 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo17 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo18 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo19 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo20 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo21 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo22 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo23 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo24 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo25 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo26 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo27 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.CsvSourceOptions csvSourceOptions1 = new DevExpress.DataAccess.Excel.CsvSourceOptions();
             this.txtFirstName = new DevExpress.XtraEditors.TextEdit();
             this.txtLastName = new DevExpress.XtraEditors.TextEdit();
             this.txtJobTitle = new DevExpress.XtraEditors.TextEdit();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.txtMiddleName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.employeeInformationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.qcrrDataSet = new EmployeeManager.QcrrDataSet();
+            this.txtBoss = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txtDate = new DevExpress.XtraEditors.DateEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -64,6 +80,8 @@
             this.txtLOC = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.txtEmployeeID = new DevExpress.XtraEditors.TextEdit();
+            this.employeeInformationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qcrrDataSet = new EmployeeManager.QcrrDataSet();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
@@ -78,29 +96,64 @@
             this.employee_InformationTableAdapter = new EmployeeManager.QcrrDataSetTableAdapters.Employee_InformationTableAdapter();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.queryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txtBoss = new DevExpress.XtraEditors.ComboBoxEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.excelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colEmployeeID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLocation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTitle = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDeptID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmpGroup = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSupervisorName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colFullPart = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colShift = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colReg_Temp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colWork_Center = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCostCenter = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHireDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.lblstat = new DevExpress.XtraEditors.LabelControl();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.excelDataSource2 = new DevExpress.DataAccess.Excel.ExcelDataSource();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.lblVersion = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJobTitle.Properties)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeInformationBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qcrrDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMiddleName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBoss.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDeptID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLOC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmployeeID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeInformationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qcrrDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hyperLinkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBoss.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtFirstName
@@ -125,7 +178,7 @@
             // 
             // txtJobTitle
             // 
-            this.txtJobTitle.Location = new System.Drawing.Point(39, 59);
+            this.txtJobTitle.Location = new System.Drawing.Point(39, 87);
             this.txtJobTitle.Name = "txtJobTitle";
             this.txtJobTitle.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJobTitle.Properties.Appearance.Options.UseFont = true;
@@ -139,6 +192,8 @@
             this.flowLayoutPanel1.Controls.Add(this.txtFirstName);
             this.flowLayoutPanel1.Controls.Add(this.labelControl1);
             this.flowLayoutPanel1.Controls.Add(this.txtLastName);
+            this.flowLayoutPanel1.Controls.Add(this.labelControl10);
+            this.flowLayoutPanel1.Controls.Add(this.txtMiddleName);
             this.flowLayoutPanel1.Controls.Add(this.labelControl3);
             this.flowLayoutPanel1.Controls.Add(this.txtJobTitle);
             this.flowLayoutPanel1.Controls.Add(this.labelControl4);
@@ -153,7 +208,7 @@
             this.flowLayoutPanel1.Controls.Add(this.txtEmployeeID);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 39);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(255, 201);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(262, 223);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // labelControl2
@@ -176,11 +231,31 @@
             this.labelControl1.TabIndex = 4;
             this.labelControl1.Text = "Last Name:";
             // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Location = new System.Drawing.Point(3, 59);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(82, 16);
+            this.labelControl10.TabIndex = 17;
+            this.labelControl10.Text = "Middle Name:";
+            // 
+            // txtMiddleName
+            // 
+            this.txtMiddleName.Location = new System.Drawing.Point(91, 59);
+            this.txtMiddleName.Name = "txtMiddleName";
+            this.txtMiddleName.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMiddleName.Properties.Appearance.Options.UseFont = true;
+            this.txtMiddleName.Size = new System.Drawing.Size(140, 22);
+            this.txtMiddleName.TabIndex = 16;
+            this.txtMiddleName.EditValueChanged += new System.EventHandler(this.txtMiddleName_EditValueChanged);
+            // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(3, 59);
+            this.labelControl3.Location = new System.Drawing.Point(3, 87);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(30, 16);
             this.labelControl3.TabIndex = 6;
@@ -190,27 +265,32 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(3, 87);
+            this.labelControl4.Location = new System.Drawing.Point(3, 115);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(64, 16);
             this.labelControl4.TabIndex = 7;
             this.labelControl4.Text = "Supervisor:";
             // 
-            // employeeInformationBindingSource
+            // txtBoss
             // 
-            this.employeeInformationBindingSource.DataMember = "Employee_Information";
-            this.employeeInformationBindingSource.DataSource = this.qcrrDataSet;
-            // 
-            // qcrrDataSet
-            // 
-            this.qcrrDataSet.DataSetName = "QcrrDataSet";
-            this.qcrrDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.txtBoss.Location = new System.Drawing.Point(73, 115);
+            this.txtBoss.Name = "txtBoss";
+            this.txtBoss.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoss.Properties.Appearance.Options.UseFont = true;
+            this.txtBoss.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtBoss.Properties.PopupSizeable = true;
+            this.txtBoss.Size = new System.Drawing.Size(158, 22);
+            this.txtBoss.TabIndex = 3;
+            this.txtBoss.ToolTip = "Enter Supervisor Name as Last Name then ";
+            this.txtBoss.SelectedIndexChanged += new System.EventHandler(this.txtBoss_SelectedIndexChanged);
+            this.txtBoss.EditValueChanged += new System.EventHandler(this.txtBoss_EditValueChanged);
             // 
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(3, 115);
+            this.labelControl6.Location = new System.Drawing.Point(3, 143);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(59, 16);
             this.labelControl6.TabIndex = 9;
@@ -219,7 +299,7 @@
             // txtDate
             // 
             this.txtDate.EditValue = null;
-            this.txtDate.Location = new System.Drawing.Point(68, 115);
+            this.txtDate.Location = new System.Drawing.Point(68, 143);
             this.txtDate.Name = "txtDate";
             this.txtDate.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.Properties.Appearance.Options.UseFont = true;
@@ -241,7 +321,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(3, 143);
+            this.labelControl7.Location = new System.Drawing.Point(3, 171);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(45, 16);
             this.labelControl7.TabIndex = 11;
@@ -249,7 +329,7 @@
             // 
             // txtDeptID
             // 
-            this.txtDeptID.Location = new System.Drawing.Point(54, 143);
+            this.txtDeptID.Location = new System.Drawing.Point(54, 171);
             this.txtDeptID.Name = "txtDeptID";
             this.txtDeptID.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDeptID.Properties.Appearance.Options.UseFont = true;
@@ -261,7 +341,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(114, 143);
+            this.labelControl8.Location = new System.Drawing.Point(114, 171);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(29, 16);
             this.labelControl8.TabIndex = 13;
@@ -269,7 +349,7 @@
             // 
             // txtLOC
             // 
-            this.txtLOC.Location = new System.Drawing.Point(149, 143);
+            this.txtLOC.Location = new System.Drawing.Point(149, 171);
             this.txtLOC.Name = "txtLOC";
             this.txtLOC.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLOC.Properties.Appearance.Options.UseFont = true;
@@ -281,7 +361,7 @@
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(3, 171);
+            this.labelControl9.Location = new System.Drawing.Point(3, 199);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(75, 16);
             this.labelControl9.TabIndex = 15;
@@ -289,13 +369,23 @@
             // 
             // txtEmployeeID
             // 
-            this.txtEmployeeID.Location = new System.Drawing.Point(84, 171);
+            this.txtEmployeeID.Location = new System.Drawing.Point(84, 199);
             this.txtEmployeeID.Name = "txtEmployeeID";
             this.txtEmployeeID.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmployeeID.Properties.Appearance.Options.UseFont = true;
             this.txtEmployeeID.Size = new System.Drawing.Size(67, 22);
             this.txtEmployeeID.TabIndex = 14;
             this.txtEmployeeID.EditValueChanged += new System.EventHandler(this.txtEmployeeID_EditValueChanged);
+            // 
+            // employeeInformationBindingSource
+            // 
+            this.employeeInformationBindingSource.DataMember = "Employee_Information";
+            this.employeeInformationBindingSource.DataSource = this.qcrrDataSet;
+            // 
+            // qcrrDataSet
+            // 
+            this.qcrrDataSet.DataSetName = "QcrrDataSet";
+            this.qcrrDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // labelControl5
             // 
@@ -310,6 +400,8 @@
             // 
             // simpleButton1
             // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.simpleButton1.ImageUri.Uri = "AddNewDataSource";
@@ -318,11 +410,14 @@
             this.simpleButton1.Size = new System.Drawing.Size(120, 47);
             this.simpleButton1.TabIndex = 6;
             this.simpleButton1.Text = "ADD";
-            this.simpleButton1.ToolTip = "Add a NEW Employee after entering all the new information";
+            this.simpleButton1.ToolTip = "Add a NEW Employee after entering all the new information on the LEFT";
+            this.simpleButton1.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // simpleButton2
             // 
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.simpleButton2.ImageUri.Uri = "DeleteDataSource";
@@ -331,23 +426,29 @@
             this.simpleButton2.Size = new System.Drawing.Size(120, 47);
             this.simpleButton2.TabIndex = 7;
             this.simpleButton2.Text = "DELETE";
-            this.simpleButton2.ToolTip = "Delete an EXISTING employee";
+            this.simpleButton2.ToolTip = "Delete an EXISTING employee After entering the employee on the left. ";
+            this.simpleButton2.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // radioGroup1
             // 
-            this.radioGroup1.Location = new System.Drawing.Point(5, 246);
+            this.radioGroup1.Location = new System.Drawing.Point(288, 246);
             this.radioGroup1.Name = "radioGroup1";
             this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.radioGroup1.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
+            this.radioGroup1.Properties.Appearance.Options.UseFont = true;
             this.radioGroup1.Properties.Columns = 3;
             this.radioGroup1.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
             this.radioGroup1.Size = new System.Drawing.Size(240, 31);
             this.radioGroup1.TabIndex = 8;
+            this.radioGroup1.ToolTip = "If employee is Temporary, deselect Reg_Temp";
             this.radioGroup1.SelectedIndexChanged += new System.EventHandler(this.radioGroup1_SelectedIndexChanged);
             // 
             // simpleButton3
             // 
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton3.Appearance.Options.UseFont = true;
             this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.simpleButton3.ImageUri.Uri = "Up";
@@ -356,18 +457,18 @@
             this.simpleButton3.Size = new System.Drawing.Size(120, 47);
             this.simpleButton3.TabIndex = 9;
             this.simpleButton3.Text = "UPLOAD FILE";
-            this.simpleButton3.ToolTip = "Upload an EXCEL or CSV file.";
+            this.simpleButton3.ToolTip = "Upload an EXCEL file.";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // hyperLinkEdit1
             // 
-            this.hyperLinkEdit1.EditValue = "Click here to open current Emplyee List";
-            this.hyperLinkEdit1.Location = new System.Drawing.Point(251, 3);
+            this.hyperLinkEdit1.EditValue = "Click here to open current Emplyee List as a CSV file";
+            this.hyperLinkEdit1.Location = new System.Drawing.Point(231, 3);
             this.hyperLinkEdit1.Name = "hyperLinkEdit1";
             this.hyperLinkEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.hyperLinkEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.hyperLinkEdit1.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.hyperLinkEdit1.Size = new System.Drawing.Size(251, 20);
+            this.hyperLinkEdit1.Size = new System.Drawing.Size(265, 20);
             this.hyperLinkEdit1.TabIndex = 10;
             this.hyperLinkEdit1.OpenLink += new DevExpress.XtraEditors.Controls.OpenLinkEventHandler(this.hyperLinkEdit1_OpenLink);
             // 
@@ -377,7 +478,7 @@
             this.flowLayoutPanel2.Controls.Add(this.simpleButton2);
             this.flowLayoutPanel2.Controls.Add(this.simpleButton3);
             this.flowLayoutPanel2.Controls.Add(this.radioGroup2);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(294, 39);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(288, 39);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(208, 201);
             this.flowLayoutPanel2.TabIndex = 11;
@@ -387,7 +488,9 @@
             this.radioGroup2.Location = new System.Drawing.Point(3, 162);
             this.radioGroup2.Name = "radioGroup2";
             this.radioGroup2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.radioGroup2.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioGroup2.Properties.Appearance.Options.UseBackColor = true;
+            this.radioGroup2.Properties.Appearance.Options.UseFont = true;
             this.radioGroup2.Properties.Columns = 2;
             this.radioGroup2.Size = new System.Drawing.Size(164, 27);
             this.radioGroup2.TabIndex = 10;
@@ -400,53 +503,54 @@
             // 
             // excelDataSource1
             // 
-            this.excelDataSource1.FileName = "C:\\Sql\\US Employee Information Book.xlsx";
+            this.excelDataSource1.FileName = "C:\\Users\\lockh_j.TRANSDEV.COM\\Documents\\Visual Studio 2015\\Projects\\EmployeeManag" +
+    "er\\EmployeeManager\\bin\\Debug\\US Employee Information Book.xlsx";
             this.excelDataSource1.Name = "excelDataSource1";
             this.excelDataSource1.ResultSchemaSerializable = resources.GetString("excelDataSource1.ResultSchemaSerializable");
-            fieldInfo118.Name = "EmployeeID";
-            fieldInfo118.Type = typeof(string);
-            fieldInfo119.Name = "Location";
-            fieldInfo119.Type = typeof(string);
-            fieldInfo120.Name = "Name";
-            fieldInfo120.Type = typeof(string);
-            fieldInfo121.Name = "Title";
-            fieldInfo121.Type = typeof(string);
-            fieldInfo122.Name = "DeptID";
-            fieldInfo122.Type = typeof(string);
-            fieldInfo123.Name = "EmpGroup";
-            fieldInfo123.Type = typeof(string);
-            fieldInfo124.Name = "SupervisorName";
-            fieldInfo124.Type = typeof(string);
-            fieldInfo125.Name = "FullPart";
-            fieldInfo125.Type = typeof(string);
-            fieldInfo126.Name = "Shift";
-            fieldInfo126.Type = typeof(string);
-            fieldInfo127.Name = "Reg_Temp";
-            fieldInfo127.Type = typeof(string);
-            fieldInfo128.Name = "Work_Center";
-            fieldInfo128.Type = typeof(string);
-            fieldInfo129.Name = "CostCenter";
-            fieldInfo129.Type = typeof(string);
-            fieldInfo130.Name = "HireDate";
-            fieldInfo130.Type = typeof(string);
+            fieldInfo1.Name = "EmployeeID";
+            fieldInfo1.Type = typeof(string);
+            fieldInfo2.Name = "Location";
+            fieldInfo2.Type = typeof(string);
+            fieldInfo3.Name = "Name";
+            fieldInfo3.Type = typeof(string);
+            fieldInfo4.Name = "Title";
+            fieldInfo4.Type = typeof(string);
+            fieldInfo5.Name = "DeptID";
+            fieldInfo5.Type = typeof(string);
+            fieldInfo6.Name = "EmpGroup";
+            fieldInfo6.Type = typeof(string);
+            fieldInfo7.Name = "SupervisorName";
+            fieldInfo7.Type = typeof(string);
+            fieldInfo8.Name = "FullPart";
+            fieldInfo8.Type = typeof(string);
+            fieldInfo9.Name = "Shift";
+            fieldInfo9.Type = typeof(string);
+            fieldInfo10.Name = "Reg_Temp";
+            fieldInfo10.Type = typeof(string);
+            fieldInfo11.Name = "Work_Center";
+            fieldInfo11.Type = typeof(string);
+            fieldInfo12.Name = "CostCenter";
+            fieldInfo12.Type = typeof(string);
+            fieldInfo13.Name = "HireDate";
+            fieldInfo13.Type = typeof(string);
             this.excelDataSource1.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
-            fieldInfo118,
-            fieldInfo119,
-            fieldInfo120,
-            fieldInfo121,
-            fieldInfo122,
-            fieldInfo123,
-            fieldInfo124,
-            fieldInfo125,
-            fieldInfo126,
-            fieldInfo127,
-            fieldInfo128,
-            fieldInfo129,
-            fieldInfo130});
-            excelWorksheetSettings10.CellRange = null;
-            excelWorksheetSettings10.WorksheetName = "Sheet1";
-            excelSourceOptions10.ImportSettings = excelWorksheetSettings10;
-            this.excelDataSource1.SourceOptions = excelSourceOptions10;
+            fieldInfo1,
+            fieldInfo2,
+            fieldInfo3,
+            fieldInfo4,
+            fieldInfo5,
+            fieldInfo6,
+            fieldInfo7,
+            fieldInfo8,
+            fieldInfo9,
+            fieldInfo10,
+            fieldInfo11,
+            fieldInfo12,
+            fieldInfo13});
+            excelWorksheetSettings1.CellRange = null;
+            excelWorksheetSettings1.WorksheetName = "Sheet1";
+            excelSourceOptions1.ImportSettings = excelWorksheetSettings1;
+            this.excelDataSource1.SourceOptions = excelSourceOptions1;
             // 
             // employee_InformationTableAdapter
             // 
@@ -456,10 +560,10 @@
             // 
             this.sqlDataSource1.ConnectionName = "etraveler02.Qcrr.Application";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery10.Name = "Query";
-            customSqlQuery10.Sql = "select distinct SupervisorName from dbo.Employee_Information";
+            customSqlQuery1.Name = "Query";
+            customSqlQuery1.Sql = "select distinct SupervisorName from dbo.Employee_Information";
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery10});
+            customSqlQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZ" +
     "T0iU3VwZXJ2aXNvck5hbWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==";
             // 
@@ -468,23 +572,9 @@
             this.queryBindingSource.DataMember = "Query";
             this.queryBindingSource.DataSource = this.sqlDataSource1;
             // 
-            // txtBoss
-            // 
-            this.txtBoss.Location = new System.Drawing.Point(73, 87);
-            this.txtBoss.Name = "txtBoss";
-            this.txtBoss.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoss.Properties.Appearance.Options.UseFont = true;
-            this.txtBoss.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtBoss.Properties.PopupSizeable = true;
-            this.txtBoss.Size = new System.Drawing.Size(158, 22);
-            this.txtBoss.TabIndex = 3;
-            this.txtBoss.ToolTip = "Enter Supervisor Name as Last Name then ";
-            this.txtBoss.SelectedIndexChanged += new System.EventHandler(this.txtBoss_SelectedIndexChanged);
-            this.txtBoss.EditValueChanged += new System.EventHandler(this.txtBoss_EditValueChanged);
-            // 
             // gridControl1
             // 
+            this.gridControl1.DataSource = this.excelBindingSource;
             this.gridControl1.Location = new System.Drawing.Point(5, 298);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
@@ -493,16 +583,323 @@
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
+            // excelBindingSource
+            // 
+            this.excelBindingSource.DataSource = this.excelDataSource1;
+            // 
             // gridView1
             // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colEmployeeID,
+            this.colLocation,
+            this.colName,
+            this.colTitle,
+            this.colDeptID,
+            this.colEmpGroup,
+            this.colSupervisorName,
+            this.colFullPart,
+            this.colShift,
+            this.colReg_Temp,
+            this.colWork_Center,
+            this.colCostCenter,
+            this.colHireDate});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            // 
+            // colEmployeeID
+            // 
+            this.colEmployeeID.FieldName = "EmployeeID";
+            this.colEmployeeID.Name = "colEmployeeID";
+            this.colEmployeeID.Visible = true;
+            this.colEmployeeID.VisibleIndex = 0;
+            // 
+            // colLocation
+            // 
+            this.colLocation.FieldName = "Location";
+            this.colLocation.Name = "colLocation";
+            this.colLocation.Visible = true;
+            this.colLocation.VisibleIndex = 1;
+            // 
+            // colName
+            // 
+            this.colName.FieldName = "Name";
+            this.colName.Name = "colName";
+            this.colName.Visible = true;
+            this.colName.VisibleIndex = 2;
+            // 
+            // colTitle
+            // 
+            this.colTitle.FieldName = "Title";
+            this.colTitle.Name = "colTitle";
+            this.colTitle.Visible = true;
+            this.colTitle.VisibleIndex = 3;
+            // 
+            // colDeptID
+            // 
+            this.colDeptID.FieldName = "DeptID";
+            this.colDeptID.Name = "colDeptID";
+            this.colDeptID.Visible = true;
+            this.colDeptID.VisibleIndex = 4;
+            // 
+            // colEmpGroup
+            // 
+            this.colEmpGroup.FieldName = "EmpGroup";
+            this.colEmpGroup.Name = "colEmpGroup";
+            this.colEmpGroup.Visible = true;
+            this.colEmpGroup.VisibleIndex = 5;
+            // 
+            // colSupervisorName
+            // 
+            this.colSupervisorName.FieldName = "SupervisorName";
+            this.colSupervisorName.Name = "colSupervisorName";
+            this.colSupervisorName.Visible = true;
+            this.colSupervisorName.VisibleIndex = 6;
+            // 
+            // colFullPart
+            // 
+            this.colFullPart.FieldName = "FullPart";
+            this.colFullPart.Name = "colFullPart";
+            this.colFullPart.Visible = true;
+            this.colFullPart.VisibleIndex = 7;
+            // 
+            // colShift
+            // 
+            this.colShift.FieldName = "Shift";
+            this.colShift.Name = "colShift";
+            this.colShift.Visible = true;
+            this.colShift.VisibleIndex = 8;
+            // 
+            // colReg_Temp
+            // 
+            this.colReg_Temp.FieldName = "Reg_Temp";
+            this.colReg_Temp.Name = "colReg_Temp";
+            this.colReg_Temp.Visible = true;
+            this.colReg_Temp.VisibleIndex = 9;
+            // 
+            // colWork_Center
+            // 
+            this.colWork_Center.FieldName = "Work_Center";
+            this.colWork_Center.Name = "colWork_Center";
+            this.colWork_Center.Visible = true;
+            this.colWork_Center.VisibleIndex = 10;
+            // 
+            // colCostCenter
+            // 
+            this.colCostCenter.FieldName = "CostCenter";
+            this.colCostCenter.Name = "colCostCenter";
+            this.colCostCenter.Visible = true;
+            this.colCostCenter.VisibleIndex = 11;
+            // 
+            // colHireDate
+            // 
+            this.colHireDate.FieldName = "HireDate";
+            this.colHireDate.Name = "colHireDate";
+            this.colHireDate.Visible = true;
+            this.colHireDate.VisibleIndex = 12;
+            // 
+            // lblstat
+            // 
+            this.lblstat.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblstat.Appearance.Options.UseFont = true;
+            this.lblstat.Location = new System.Drawing.Point(5, 283);
+            this.lblstat.Name = "lblstat";
+            this.lblstat.Size = new System.Drawing.Size(84, 15);
+            this.lblstat.TabIndex = 13;
+            this.lblstat.Text = "labelControl10";
+            // 
+            // gridControl2
+            // 
+            this.gridControl2.DataSource = this.excelDataSource2;
+            this.gridControl2.Location = new System.Drawing.Point(5, 399);
+            this.gridControl2.MainView = this.gridView2;
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.Size = new System.Drawing.Size(400, 88);
+            this.gridControl2.TabIndex = 14;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView2});
+            // 
+            // excelDataSource2
+            // 
+            this.excelDataSource2.FileName = "C:\\Sql\\Sheet1.csv";
+            this.excelDataSource2.Name = "excelDataSource2";
+            this.excelDataSource2.ResultSchemaSerializable = resources.GetString("excelDataSource2.ResultSchemaSerializable");
+            fieldInfo14.Name = "EmployeeID";
+            fieldInfo14.Type = typeof(string);
+            fieldInfo15.Name = "Location";
+            fieldInfo15.Type = typeof(double);
+            fieldInfo16.Name = "Name";
+            fieldInfo16.Type = typeof(string);
+            fieldInfo17.Name = "Title";
+            fieldInfo17.Type = typeof(string);
+            fieldInfo18.Name = "DeptID";
+            fieldInfo18.Type = typeof(double);
+            fieldInfo19.Name = "EmpGroup";
+            fieldInfo19.Type = typeof(string);
+            fieldInfo20.Name = "SupervisorName";
+            fieldInfo20.Type = typeof(string);
+            fieldInfo21.Name = "FullPart";
+            fieldInfo21.Type = typeof(string);
+            fieldInfo22.Name = "Shift";
+            fieldInfo22.Type = typeof(string);
+            fieldInfo23.Name = "Reg_Temp";
+            fieldInfo23.Type = typeof(string);
+            fieldInfo24.Name = "Work_Center";
+            fieldInfo24.Type = typeof(double);
+            fieldInfo25.Name = "CostCenter";
+            fieldInfo25.Type = typeof(string);
+            fieldInfo26.Name = "rowguid";
+            fieldInfo26.Type = typeof(string);
+            fieldInfo27.Name = "HireDate";
+            fieldInfo27.Type = typeof(System.DateTime);
+            this.excelDataSource2.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
+            fieldInfo14,
+            fieldInfo15,
+            fieldInfo16,
+            fieldInfo17,
+            fieldInfo18,
+            fieldInfo19,
+            fieldInfo20,
+            fieldInfo21,
+            fieldInfo22,
+            fieldInfo23,
+            fieldInfo24,
+            fieldInfo25,
+            fieldInfo26,
+            fieldInfo27});
+            csvSourceOptions1.Culture = new System.Globalization.CultureInfo("");
+            csvSourceOptions1.DetectNewlineType = true;
+            csvSourceOptions1.DetectValueSeparator = true;
+            csvSourceOptions1.Encoding = ((System.Text.Encoding)(resources.GetObject("csvSourceOptions1.Encoding")));
+            this.excelDataSource2.SourceOptions = csvSourceOptions1;
+            // 
+            // gridView2
+            // 
+            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4,
+            this.gridColumn5,
+            this.gridColumn6,
+            this.gridColumn7,
+            this.gridColumn8,
+            this.gridColumn9,
+            this.gridColumn10,
+            this.gridColumn11,
+            this.gridColumn12,
+            this.gridColumn13});
+            this.gridView2.GridControl = this.gridControl2;
+            this.gridView2.Name = "gridView2";
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.FieldName = "EmployeeID";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.FieldName = "Location";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 1;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.FieldName = "Name";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 2;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.FieldName = "Title";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 3;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.FieldName = "DeptID";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 4;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.FieldName = "EmpGroup";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 5;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.FieldName = "SupervisorName";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 6;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.FieldName = "FullPart";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 7;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.FieldName = "Shift";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 8;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.FieldName = "Reg_Temp";
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 9;
+            // 
+            // gridColumn11
+            // 
+            this.gridColumn11.FieldName = "Work_Center";
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.Visible = true;
+            this.gridColumn11.VisibleIndex = 10;
+            // 
+            // gridColumn12
+            // 
+            this.gridColumn12.FieldName = "CostCenter";
+            this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.Visible = true;
+            this.gridColumn12.VisibleIndex = 11;
+            // 
+            // gridColumn13
+            // 
+            this.gridColumn13.FieldName = "HireDate";
+            this.gridColumn13.Name = "gridColumn13";
+            this.gridColumn13.Visible = true;
+            this.gridColumn13.VisibleIndex = 12;
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.Appearance.Options.UseFont = true;
+            this.lblVersion.Location = new System.Drawing.Point(412, 283);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(36, 15);
+            this.lblVersion.TabIndex = 15;
+            this.lblVersion.Text = "Version";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 297);
+            this.ClientSize = new System.Drawing.Size(538, 299);
+            this.Controls.Add(this.lblVersion);
+            this.Controls.Add(this.gridControl2);
+            this.Controls.Add(this.lblstat);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.hyperLinkEdit1);
@@ -512,28 +909,31 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Employee Manager";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJobTitle.Properties)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeInformationBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qcrrDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMiddleName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBoss.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDeptID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLOC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmployeeID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeInformationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qcrrDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hyperLinkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBoss.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -576,6 +976,40 @@
         private DevExpress.XtraEditors.ComboBoxEdit txtBoss;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmployeeID;
+        private DevExpress.XtraGrid.Columns.GridColumn colLocation;
+        private DevExpress.XtraGrid.Columns.GridColumn colName;
+        private DevExpress.XtraGrid.Columns.GridColumn colTitle;
+        private DevExpress.XtraGrid.Columns.GridColumn colDeptID;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmpGroup;
+        private DevExpress.XtraGrid.Columns.GridColumn colSupervisorName;
+        private DevExpress.XtraGrid.Columns.GridColumn colFullPart;
+        private DevExpress.XtraGrid.Columns.GridColumn colShift;
+        private DevExpress.XtraGrid.Columns.GridColumn colReg_Temp;
+        private DevExpress.XtraGrid.Columns.GridColumn colWork_Center;
+        private DevExpress.XtraGrid.Columns.GridColumn colCostCenter;
+        private DevExpress.XtraGrid.Columns.GridColumn colHireDate;
+        private System.Windows.Forms.BindingSource excelBindingSource;
+        private DevExpress.XtraEditors.LabelControl lblstat;
+        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
+        private DevExpress.XtraEditors.LabelControl lblVersion;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.TextEdit txtMiddleName;
     }
 }
 
