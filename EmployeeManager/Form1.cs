@@ -106,17 +106,18 @@ namespace EmployeeManager
             excelDataSource2.Fill();
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)//ADD ONE NEW EMPLOYEE
+        private void simpleButton1_Click(object sender, EventArgs e)//ADD/UPDATE ONE NEW EMPLOYEE
         {
             //Check Data
             NemployeeName = string.Format("{0},{1}", NemployeeLName, NemployeeFName);
-            if (NemployeeMName != "") { NemployeeName = string.Format("{0} {1},{2}", NemployeeLName, NemployeeMName, NemployeeFName); }
+            if (NemployeeMName != "" && NemployeeMName != null) { NemployeeName = string.Format("{0} {1},{2}", NemployeeLName, NemployeeMName, NemployeeFName); }
+            NemployeeName = RemoveWhitespace(NemployeeName);
             SqlConnection SqlConn = new SqlConnection(ETRAV);
             SqlConn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter(string.Format("SELECT COUNT(*) FROM dbo.Employee_Information where Name='{0}'", NemployeeName), SqlConn);
+            SqlDataAdapter sda = new SqlDataAdapter(string.Format("SELECT COUNT(*) FROM dbo.Employee_Information where EmployeeID='{0}'", NemployeeID), SqlConn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-
+            
             //ifOK Upload new employee
             if (dt.Rows[0][0].ToString() == "0")
             {
@@ -126,7 +127,7 @@ namespace EmployeeManager
                 {
                     mySQL mSQL = new mySQL();
                     bool success = mSQL.myInsert("Etrav-Hack", newemployee);
-                    if (success == true) { lblstat.Text = "Updated Employee: " + NemployeeName; }
+                    if (success == true) { lblstat.Text = "Updated Employee: " + NemployeeName; RefreshForm(); } else { lblstat.Text = string.Format("Employee: {0} Not Updated. Check Entries", NemployeeName); }
 
                 }
 
@@ -137,8 +138,26 @@ namespace EmployeeManager
                     return;
                 }
             }
-            //else error message
+            if (dt.Rows[0][0].ToString() == "1")
+            {
 
+                string newemployee = string.Format("update dbo.Employee_Information set EmployeeID='{0}',Location='{1}',Name='{2}',Title='{3}',DeptID='{4}',HireDate='{5}',SupervisorName='{6}',FullPart='{7}',Reg_Temp='{8}' where EmployeeID='{0}'", NemployeeID, NemployeeLOC, NemployeeName, NemployeeTitle, NemployeeDeptID, NemployeeHireDate, NemployeeSupervisorName, EMPLOYEETYPE, EMPLOYEETYPE);
+                try
+                {
+                    mySQL mSQL = new mySQL();
+                    bool success = mSQL.myInsert("Etrav-Hack", newemployee);
+                    if (success == true) { lblstat.Text = "Updated Employee: " + NemployeeName; RefreshForm(); } else { lblstat.Text = string.Format("Employee: {0} Not Updated. Check Entries", NemployeeName); }
+
+                }
+
+                catch
+                {
+                    MessageBox.Show("SQL Insert Failed For Query: \n" + newemployee);
+                    //hyperlinkLabelControl1.Text = "SQL Insert Failed";
+                    return;
+                }
+            }
+            SqlConn.Close();
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)//DELETE ONE CURRENT EMPLOYEE
@@ -146,6 +165,7 @@ namespace EmployeeManager
             //Check Data
             NemployeeName = string.Format("{0},{1}", NemployeeLName, NemployeeFName);
             if (NemployeeMName != "") { NemployeeName = string.Format("{0} {1},{2}", NemployeeLName, NemployeeMName, NemployeeFName); }
+            NemployeeName = RemoveWhitespace(NemployeeName);
             SqlConnection SqlConn = new SqlConnection(ETRAV);
             SqlConn.Open();
             SqlDataAdapter sda = new SqlDataAdapter(string.Format("SELECT COUNT(*) FROM dbo.Employee_Information where Name='{0}' and EmployeeID='{1}'", NemployeeName, NemployeeID), SqlConn);
@@ -161,7 +181,7 @@ namespace EmployeeManager
                 {
                     mySQL mSQL = new mySQL();
                     bool success = mSQL.myInsert("Etrav-Hack", deleteemployee);
-                    if (success == true) { lblstat.Text = "Deleted Employee: " + NemployeeName; }
+                    if (success == true) { lblstat.Text = "Deleted Employee: " + NemployeeName; RefreshForm(); }
 
                 }
 
@@ -313,7 +333,8 @@ namespace EmployeeManager
                     }
                 }
 
-
+                lblstat.Text = "Added Employee: Completed Without Error";
+                lblstat.Update();
             }
             lblstat.Text = "Added Employee: Completed Without Error";
             lblstat.Update();
@@ -425,7 +446,8 @@ namespace EmployeeManager
                         return;
                     }
                 }
-
+                lblstat.Text = "Added Employee: Completed Without Error";
+                lblstat.Update();
 
             }
             lblstat.Text = "Added Employee: Completed Without Error";
@@ -780,11 +802,8 @@ namespace EmployeeManager
             bool result = false;
             string CP = "Updater";
             bool unzipactive = true;
-            string startPath = @"C:\Sql\DevExpress16.2\start";
-            string zipPath = @"C:\Sql\DevExpress16.2\result.zip";
-            string extractPath = @"C:\Sql\DevExpress16.2\extract";
-
-            if (File.Exists(@"C:\Sql\updater.dll") == true && File.Exists(@"C:\Sql\DevExpress16.2.zip")== true)
+            const string zipPath = @"C:\Sql\DevExpress16.2\result.zip";
+            if (File.Exists(@"C:\Sql\updater.dll") == true && File.Exists(@"C:\Sql\DevExpress16.2.zip") == true)
             {
                 result = true;
             }
@@ -807,7 +826,7 @@ namespace EmployeeManager
                     //varPathToNewLocation = userRoot;
                     SqlConn.Open();
                     command.Parameters.AddWithValue("@varDLL", CP);
-                    command.CommandText = string.Format("SELECT VSApplication FROM images.dbo.tblVSapplications WHERE Applicationname='{0}'", CP );
+                    command.CommandText = string.Format("SELECT VSApplication FROM images.dbo.tblVSapplications WHERE Applicationname='{0}'", CP);
                     using (SqlDataReader sqlQueryResult = command.ExecuteReader(CommandBehavior.SequentialAccess))
 
                         while (sqlQueryResult.Read())
@@ -853,14 +872,70 @@ namespace EmployeeManager
                         }
                 }
             }
-            if(unzipactive == true) {
-                System.IO.Compression.ZipFile.CreateFromDirectory(startPath, zipPath);
-                System.IO.Compression.ZipFile.ExtractToDirectory(zipPath, extractPath);
+            if (unzipactive == true)
+            {
+                ZipFile.CreateFromDirectory(@"C:\Sql\DevExpress16.2\start", zipPath);
+                ZipFile.ExtractToDirectory(zipPath, @"C:\Sql\DevExpress16.2\extract");
             }
             return result;
 
         }
+        public static string RemoveWhitespace(string input)
+        {
+            return new string(input.ToCharArray()
+                .Where(c => !Char.IsWhiteSpace(c))
+               .ToArray());
+        }
 
+        public void RefreshForm()
+        {
+
+            UncheckAll(this);
+            ClearTextBoxes();
+            txtBoss.Text = "";
+            txtDate.Text = "";
+            txtDeptID.Text = "";
+            txtEmployeeID.Text = "";
+            txtFirstName.Text = "";
+            txtJobTitle.Text = "";
+            txtLastName.Text = "";
+            txtLOC.Text = "";
+            txtMiddleName.Text = "";
+            
+            
+        }
+
+        private void ClearTextBoxes()
+        {
+            Action<Control.ControlCollection> func = null;
+
+            func = (controls) =>
+            {
+                foreach (Control control in controls)
+                    if (control is TextBox)
+                        (control as TextBox).Clear();
+                    else
+                        func(control.Controls);
+            };
+
+            func(Controls);
+        }
+
+        private void UncheckAll(Control ctrl)
+        {
+            CheckBox chkBox = ctrl as CheckBox;
+            if (chkBox == null)
+            {
+                foreach (Control child in ctrl.Controls)
+                {
+                    UncheckAll(child);
+                }
+            }
+            else
+            {
+                chkBox.Checked = false;
+            }
+        }
         private void txtMiddleName_EditValueChanged(object sender, EventArgs e)
         {
              NemployeeMName= txtMiddleName.Text;
