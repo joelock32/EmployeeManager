@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo1 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo2 = new DevExpress.DataAccess.Excel.FieldInfo();
@@ -45,7 +46,6 @@
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo13 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings1 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
             DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions1 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings1);
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo14 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo15 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo16 = new DevExpress.DataAccess.Excel.FieldInfo();
@@ -80,7 +80,6 @@
             this.txtLOC = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.txtEmployeeID = new DevExpress.XtraEditors.TextEdit();
-            this.employeeInformationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qcrrDataSet = new EmployeeManager.QcrrDataSet();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -92,12 +91,10 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.radioGroup2 = new DevExpress.XtraEditors.RadioGroup();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.excelDataSource1 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.employee_InformationTableAdapter = new EmployeeManager.QcrrDataSetTableAdapters.Employee_InformationTableAdapter();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.queryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.excelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.excelDataSource1 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colEmployeeID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colLocation = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -116,19 +113,20 @@
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.excelDataSource2 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmployeeID1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLocation1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colName1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTitle1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDeptID1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmpGroup1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSupervisorName1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colFullPart1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colShift1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colReg_Temp1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colWork_Center1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCostCenter1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colrowguid = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHireDate1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lblVersion = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
@@ -141,16 +139,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDeptID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLOC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmployeeID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeInformationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qcrrDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hyperLinkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
@@ -377,11 +372,6 @@
             this.txtEmployeeID.TabIndex = 14;
             this.txtEmployeeID.EditValueChanged += new System.EventHandler(this.txtEmployeeID_EditValueChanged);
             // 
-            // employeeInformationBindingSource
-            // 
-            this.employeeInformationBindingSource.DataMember = "Employee_Information";
-            this.employeeInformationBindingSource.DataSource = this.qcrrDataSet;
-            // 
             // qcrrDataSet
             // 
             this.qcrrDataSet.DataSetName = "QcrrDataSet";
@@ -501,10 +491,35 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
+            // employee_InformationTableAdapter
+            // 
+            this.employee_InformationTableAdapter.ClearBeforeFill = true;
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "etraveler02.Qcrr.Application";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            customSqlQuery1.Name = "Query";
+            customSqlQuery1.Sql = "select distinct SupervisorName from dbo.Employee_Information";
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            customSqlQuery1});
+            this.sqlDataSource1.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZ" +
+    "T0iU3VwZXJ2aXNvck5hbWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==";
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.DataSource = this.excelDataSource1;
+            this.gridControl1.Location = new System.Drawing.Point(5, 353);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(523, 88);
+            this.gridControl1.TabIndex = 12;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
             // excelDataSource1
             // 
-            this.excelDataSource1.FileName = "C:\\Users\\lockh_j.TRANSDEV.COM\\Documents\\Visual Studio 2015\\Projects\\EmployeeManag" +
-    "er\\EmployeeManager\\bin\\Debug\\US Employee Information Book.xlsx";
+            this.excelDataSource1.FileName = "C:\\Sql\\US Employee Information Book.xlsx";
             this.excelDataSource1.Name = "excelDataSource1";
             this.excelDataSource1.ResultSchemaSerializable = resources.GetString("excelDataSource1.ResultSchemaSerializable");
             fieldInfo1.Name = "EmployeeID";
@@ -551,41 +566,6 @@
             excelWorksheetSettings1.WorksheetName = "Sheet1";
             excelSourceOptions1.ImportSettings = excelWorksheetSettings1;
             this.excelDataSource1.SourceOptions = excelSourceOptions1;
-            // 
-            // employee_InformationTableAdapter
-            // 
-            this.employee_InformationTableAdapter.ClearBeforeFill = true;
-            // 
-            // sqlDataSource1
-            // 
-            this.sqlDataSource1.ConnectionName = "etraveler02.Qcrr.Application";
-            this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery1.Name = "Query";
-            customSqlQuery1.Sql = "select distinct SupervisorName from dbo.Employee_Information";
-            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery1});
-            this.sqlDataSource1.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZ" +
-    "T0iU3VwZXJ2aXNvck5hbWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==";
-            // 
-            // queryBindingSource
-            // 
-            this.queryBindingSource.DataMember = "Query";
-            this.queryBindingSource.DataSource = this.sqlDataSource1;
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.DataSource = this.excelBindingSource;
-            this.gridControl1.Location = new System.Drawing.Point(5, 298);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(400, 88);
-            this.gridControl1.TabIndex = 12;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // excelBindingSource
-            // 
-            this.excelBindingSource.DataSource = this.excelDataSource1;
             // 
             // gridView1
             // 
@@ -710,10 +690,10 @@
             // gridControl2
             // 
             this.gridControl2.DataSource = this.excelDataSource2;
-            this.gridControl2.Location = new System.Drawing.Point(5, 399);
+            this.gridControl2.Location = new System.Drawing.Point(5, 447);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(400, 88);
+            this.gridControl2.Size = new System.Drawing.Size(523, 87);
             this.gridControl2.TabIndex = 14;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -775,118 +755,126 @@
             // gridView2
             // 
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10,
-            this.gridColumn11,
-            this.gridColumn12,
-            this.gridColumn13});
+            this.colEmployeeID1,
+            this.colLocation1,
+            this.colName1,
+            this.colTitle1,
+            this.colDeptID1,
+            this.colEmpGroup1,
+            this.colSupervisorName1,
+            this.colFullPart1,
+            this.colShift1,
+            this.colReg_Temp1,
+            this.colWork_Center1,
+            this.colCostCenter1,
+            this.colrowguid,
+            this.colHireDate1});
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             // 
-            // gridColumn1
+            // colEmployeeID1
             // 
-            this.gridColumn1.FieldName = "EmployeeID";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
+            this.colEmployeeID1.FieldName = "EmployeeID";
+            this.colEmployeeID1.Name = "colEmployeeID1";
+            this.colEmployeeID1.Visible = true;
+            this.colEmployeeID1.VisibleIndex = 0;
             // 
-            // gridColumn2
+            // colLocation1
             // 
-            this.gridColumn2.FieldName = "Location";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.colLocation1.FieldName = "Location";
+            this.colLocation1.Name = "colLocation1";
+            this.colLocation1.Visible = true;
+            this.colLocation1.VisibleIndex = 1;
             // 
-            // gridColumn3
+            // colName1
             // 
-            this.gridColumn3.FieldName = "Name";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.colName1.FieldName = "Name";
+            this.colName1.Name = "colName1";
+            this.colName1.Visible = true;
+            this.colName1.VisibleIndex = 2;
             // 
-            // gridColumn4
+            // colTitle1
             // 
-            this.gridColumn4.FieldName = "Title";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
+            this.colTitle1.FieldName = "Title";
+            this.colTitle1.Name = "colTitle1";
+            this.colTitle1.Visible = true;
+            this.colTitle1.VisibleIndex = 3;
             // 
-            // gridColumn5
+            // colDeptID1
             // 
-            this.gridColumn5.FieldName = "DeptID";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
+            this.colDeptID1.FieldName = "DeptID";
+            this.colDeptID1.Name = "colDeptID1";
+            this.colDeptID1.Visible = true;
+            this.colDeptID1.VisibleIndex = 4;
             // 
-            // gridColumn6
+            // colEmpGroup1
             // 
-            this.gridColumn6.FieldName = "EmpGroup";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
+            this.colEmpGroup1.FieldName = "EmpGroup";
+            this.colEmpGroup1.Name = "colEmpGroup1";
+            this.colEmpGroup1.Visible = true;
+            this.colEmpGroup1.VisibleIndex = 5;
             // 
-            // gridColumn7
+            // colSupervisorName1
             // 
-            this.gridColumn7.FieldName = "SupervisorName";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 6;
+            this.colSupervisorName1.FieldName = "SupervisorName";
+            this.colSupervisorName1.Name = "colSupervisorName1";
+            this.colSupervisorName1.Visible = true;
+            this.colSupervisorName1.VisibleIndex = 6;
             // 
-            // gridColumn8
+            // colFullPart1
             // 
-            this.gridColumn8.FieldName = "FullPart";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 7;
+            this.colFullPart1.FieldName = "FullPart";
+            this.colFullPart1.Name = "colFullPart1";
+            this.colFullPart1.Visible = true;
+            this.colFullPart1.VisibleIndex = 7;
             // 
-            // gridColumn9
+            // colShift1
             // 
-            this.gridColumn9.FieldName = "Shift";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 8;
+            this.colShift1.FieldName = "Shift";
+            this.colShift1.Name = "colShift1";
+            this.colShift1.Visible = true;
+            this.colShift1.VisibleIndex = 8;
             // 
-            // gridColumn10
+            // colReg_Temp1
             // 
-            this.gridColumn10.FieldName = "Reg_Temp";
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 9;
+            this.colReg_Temp1.FieldName = "Reg_Temp";
+            this.colReg_Temp1.Name = "colReg_Temp1";
+            this.colReg_Temp1.Visible = true;
+            this.colReg_Temp1.VisibleIndex = 9;
             // 
-            // gridColumn11
+            // colWork_Center1
             // 
-            this.gridColumn11.FieldName = "Work_Center";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 10;
+            this.colWork_Center1.FieldName = "Work_Center";
+            this.colWork_Center1.Name = "colWork_Center1";
+            this.colWork_Center1.Visible = true;
+            this.colWork_Center1.VisibleIndex = 10;
             // 
-            // gridColumn12
+            // colCostCenter1
             // 
-            this.gridColumn12.FieldName = "CostCenter";
-            this.gridColumn12.Name = "gridColumn12";
-            this.gridColumn12.Visible = true;
-            this.gridColumn12.VisibleIndex = 11;
+            this.colCostCenter1.FieldName = "CostCenter";
+            this.colCostCenter1.Name = "colCostCenter1";
+            this.colCostCenter1.Visible = true;
+            this.colCostCenter1.VisibleIndex = 11;
             // 
-            // gridColumn13
+            // colrowguid
             // 
-            this.gridColumn13.FieldName = "HireDate";
-            this.gridColumn13.Name = "gridColumn13";
-            this.gridColumn13.Visible = true;
-            this.gridColumn13.VisibleIndex = 12;
+            this.colrowguid.FieldName = "rowguid";
+            this.colrowguid.Name = "colrowguid";
+            this.colrowguid.Visible = true;
+            this.colrowguid.VisibleIndex = 12;
+            // 
+            // colHireDate1
+            // 
+            this.colHireDate1.FieldName = "HireDate";
+            this.colHireDate1.Name = "colHireDate1";
+            this.colHireDate1.Visible = true;
+            this.colHireDate1.VisibleIndex = 13;
             // 
             // lblVersion
             // 
             this.lblVersion.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.Appearance.Options.UseFont = true;
-            this.lblVersion.Location = new System.Drawing.Point(412, 283);
+            this.lblVersion.Location = new System.Drawing.Point(405, 325);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(36, 15);
             this.lblVersion.TabIndex = 15;
@@ -896,7 +884,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 299);
+            this.ClientSize = new System.Drawing.Size(538, 346);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.gridControl2);
             this.Controls.Add(this.lblstat);
@@ -921,16 +909,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDeptID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLOC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmployeeID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeInformationBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qcrrDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hyperLinkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
@@ -967,15 +952,18 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private DevExpress.XtraEditors.RadioGroup radioGroup2;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource1;
         private QcrrDataSet qcrrDataSet;
-        private System.Windows.Forms.BindingSource employeeInformationBindingSource;
         private QcrrDataSetTableAdapters.Employee_InformationTableAdapter employee_InformationTableAdapter;
-        private System.Windows.Forms.BindingSource queryBindingSource;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraEditors.ComboBoxEdit txtBoss;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.LabelControl lblstat;
+        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraEditors.LabelControl lblVersion;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.TextEdit txtMiddleName;
         private DevExpress.XtraGrid.Columns.GridColumn colEmployeeID;
         private DevExpress.XtraGrid.Columns.GridColumn colLocation;
         private DevExpress.XtraGrid.Columns.GridColumn colName;
@@ -989,27 +977,22 @@
         private DevExpress.XtraGrid.Columns.GridColumn colWork_Center;
         private DevExpress.XtraGrid.Columns.GridColumn colCostCenter;
         private DevExpress.XtraGrid.Columns.GridColumn colHireDate;
-        private System.Windows.Forms.BindingSource excelBindingSource;
-        private DevExpress.XtraEditors.LabelControl lblstat;
-        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmployeeID1;
+        private DevExpress.XtraGrid.Columns.GridColumn colLocation1;
+        private DevExpress.XtraGrid.Columns.GridColumn colName1;
+        private DevExpress.XtraGrid.Columns.GridColumn colTitle1;
+        private DevExpress.XtraGrid.Columns.GridColumn colDeptID1;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmpGroup1;
+        private DevExpress.XtraGrid.Columns.GridColumn colSupervisorName1;
+        private DevExpress.XtraGrid.Columns.GridColumn colFullPart1;
+        private DevExpress.XtraGrid.Columns.GridColumn colShift1;
+        private DevExpress.XtraGrid.Columns.GridColumn colReg_Temp1;
+        private DevExpress.XtraGrid.Columns.GridColumn colWork_Center1;
+        private DevExpress.XtraGrid.Columns.GridColumn colCostCenter1;
+        private DevExpress.XtraGrid.Columns.GridColumn colrowguid;
+        private DevExpress.XtraGrid.Columns.GridColumn colHireDate1;
+        private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource1;
         private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
-        private DevExpress.XtraEditors.LabelControl lblVersion;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.TextEdit txtMiddleName;
     }
 }
 

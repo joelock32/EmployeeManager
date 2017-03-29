@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="employeeInformationBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>575, 17</value>
-  </metadata>
   <metadata name="qcrrDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>459, 17</value>
   </metadata>
@@ -129,26 +126,20 @@
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>171, 17</value>
   </metadata>
-  <metadata name="excelDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>311, 17</value>
-  </metadata>
-  <data name="excelDataSource1.ResultSchemaSerializable" xml:space="preserve">
-    <value>PFZpZXc+PEZpZWxkIE5hbWU9IkVtcGxveWVlSUQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTG9jYXRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUaXRsZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXB0SUQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRW1wR3JvdXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU3VwZXJ2aXNvck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRnVsbFBhcnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2hpZnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVnX1RlbXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iV29ya19DZW50ZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29zdENlbnRlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIaXJlRGF0ZSIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz4=</value>
-  </data>
   <metadata name="employee_InformationTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>823, 17</value>
   </metadata>
   <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1070, 17</value>
   </metadata>
-  <metadata name="queryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="excelDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1206, 17</value>
   </metadata>
-  <metadata name="excelBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1367, 17</value>
-  </metadata>
+  <data name="excelDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PFZpZXc+PEZpZWxkIE5hbWU9IkVtcGxveWVlSUQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTG9jYXRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUaXRsZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXB0SUQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRW1wR3JvdXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU3VwZXJ2aXNvck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRnVsbFBhcnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2hpZnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVnX1RlbXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iV29ya19DZW50ZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29zdENlbnRlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIaXJlRGF0ZSIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz4=</value>
+  </data>
   <metadata name="excelDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
+    <value>1354, 17</value>
   </metadata>
   <data name="excelDataSource2.ResultSchemaSerializable" xml:space="preserve">
     <value>PFZpZXc+PEZpZWxkIE5hbWU9IkVtcGxveWVlSUQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTG9jYXRpb24iIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUaXRsZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXB0SUQiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iRW1wR3JvdXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU3VwZXJ2aXNvck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRnVsbFBhcnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2hpZnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVnX1RlbXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iV29ya19DZW50ZXIiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iQ29zdENlbnRlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJyb3dndWlkIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhpcmVEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48L1ZpZXc+</value>
