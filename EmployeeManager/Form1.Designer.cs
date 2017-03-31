@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo1 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo2 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo3 = new DevExpress.DataAccess.Excel.FieldInfo();
@@ -61,6 +60,7 @@
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo26 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo27 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.CsvSourceOptions csvSourceOptions1 = new DevExpress.DataAccess.Excel.CsvSourceOptions();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtFirstName = new DevExpress.XtraEditors.TextEdit();
             this.txtLastName = new DevExpress.XtraEditors.TextEdit();
             this.txtJobTitle = new DevExpress.XtraEditors.TextEdit();
@@ -128,6 +128,7 @@
             this.colrowguid = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHireDate1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lblVersion = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJobTitle.Properties)).BeginInit();
@@ -201,9 +202,10 @@
             this.flowLayoutPanel1.Controls.Add(this.txtLOC);
             this.flowLayoutPanel1.Controls.Add(this.labelControl9);
             this.flowLayoutPanel1.Controls.Add(this.txtEmployeeID);
+            this.flowLayoutPanel1.Controls.Add(this.labelControl11);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 39);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(262, 223);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(258, 242);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // labelControl2
@@ -681,7 +683,7 @@
             // 
             this.lblstat.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblstat.Appearance.Options.UseFont = true;
-            this.lblstat.Location = new System.Drawing.Point(5, 283);
+            this.lblstat.Location = new System.Drawing.Point(5, 287);
             this.lblstat.Name = "lblstat";
             this.lblstat.Size = new System.Drawing.Size(84, 15);
             this.lblstat.TabIndex = 13;
@@ -880,11 +882,23 @@
             this.lblVersion.TabIndex = 15;
             this.lblVersion.Text = "Version";
             // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.behaviorManager1.SetBehaviors(this.labelControl11, new DevExpress.Utils.Behaviors.Behavior[] {
+            ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.Utils.Behaviors.Common.FileIconBehavior.Create(typeof(DevExpress.XtraEditors.Behaviors.FileIconBehaviorSourceForLabelControl), DevExpress.Utils.Behaviors.Common.FileIconSize.Small, ((System.Drawing.Image)(resources.GetObject("labelControl11.Behaviors"))), null)))});
+            this.labelControl11.Location = new System.Drawing.Point(3, 227);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(104, 15);
+            this.labelControl11.TabIndex = 18;
+            this.labelControl11.Text = "Enter an ID# to search";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 346);
+            this.ClientSize = new System.Drawing.Size(623, 346);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.gridControl2);
             this.Controls.Add(this.lblstat);
@@ -993,6 +1007,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colHireDate1;
         private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource1;
         private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource2;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
     }
 }
 
