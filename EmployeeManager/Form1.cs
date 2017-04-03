@@ -10,7 +10,6 @@ using EtravSQL;
 using DevExpress.DataAccess.Excel;
 using System.Data.SqlClient;
 using System.Data;
-using testlogon;
 using System.Reflection;
 using System.IO;
 using System.IO.Compression;
@@ -82,6 +81,21 @@ namespace EmployeeManager
             myreader.Close();
 
             ConfirmUser();
+
+            if (state == false)
+            {
+                string value2 = "Password";
+
+                if (InputBoxPass("Password?", "Please Enter your new Password :", ref value2) == DialogResult.OK)
+                {
+                    getlogon getpass = new getlogon();
+                    state = getpass.getfulllog(employeeName, employeeID, CallingAppName, true, value2, true);
+                    if (state == true) { getpass.getpersistant(employeeID);  MessageBox.Show("Password Saved!");} //set persistant
+                    else { MessageBox.Show("You Do Not Have Rights To This Program!"); System.Environment.Exit(1); }
+                }
+                
+            }
+
             radioGroup1.EditValue = 0;//defualt Employee Type = R
             lblstat.Text = "READY!";
 
@@ -482,7 +496,7 @@ namespace EmployeeManager
                 //if (state == true && employeeID == "07840" || employeeID == "06539") { btnbarManagment.Enabled = true; simpleButton6.Enabled = true; }
 
             }
-            else { Environment.Exit(1); }
+            
             return state;
 
         }
@@ -685,8 +699,9 @@ namespace EmployeeManager
 
                         while (myreader.Read())
                         {
-                           
+
                             //einfo[i] = myreader.GetString(i);
+
                             i = myreader.GetValues(einfo);
                             txtLOC.Text = myreader.GetString(0);
                             NemployeeName = myreader.GetString(1);
