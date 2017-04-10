@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo1 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo2 = new DevExpress.DataAccess.Excel.FieldInfo();
@@ -60,7 +61,6 @@
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo26 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo27 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.CsvSourceOptions csvSourceOptions1 = new DevExpress.DataAccess.Excel.CsvSourceOptions();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtFirstName = new DevExpress.XtraEditors.TextEdit();
             this.txtLastName = new DevExpress.XtraEditors.TextEdit();
             this.txtJobTitle = new DevExpress.XtraEditors.TextEdit();
@@ -80,6 +80,7 @@
             this.txtLOC = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.txtEmployeeID = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.qcrrDataSet = new EmployeeManager.QcrrDataSet();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -128,7 +129,7 @@
             this.colrowguid = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHireDate1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lblVersion = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJobTitle.Properties)).BeginInit();
@@ -373,6 +374,18 @@
             this.txtEmployeeID.Size = new System.Drawing.Size(67, 22);
             this.txtEmployeeID.TabIndex = 14;
             this.txtEmployeeID.EditValueChanged += new System.EventHandler(this.txtEmployeeID_EditValueChanged);
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.behaviorManager1.SetBehaviors(this.labelControl11, new DevExpress.Utils.Behaviors.Behavior[] {
+            ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.Utils.Behaviors.Common.FileIconBehavior.Create(typeof(DevExpress.XtraEditors.Behaviors.FileIconBehaviorSourceForLabelControl), DevExpress.Utils.Behaviors.Common.FileIconSize.Small, ((System.Drawing.Image)(resources.GetObject("labelControl11.Behaviors"))), null)))});
+            this.labelControl11.Location = new System.Drawing.Point(3, 227);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(104, 15);
+            this.labelControl11.TabIndex = 18;
+            this.labelControl11.Text = "Enter an ID# to search";
             // 
             // qcrrDataSet
             // 
@@ -882,23 +895,28 @@
             this.lblVersion.TabIndex = 15;
             this.lblVersion.Text = "Version";
             // 
-            // labelControl11
+            // simpleButton4
             // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.behaviorManager1.SetBehaviors(this.labelControl11, new DevExpress.Utils.Behaviors.Behavior[] {
-            ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.Utils.Behaviors.Common.FileIconBehavior.Create(typeof(DevExpress.XtraEditors.Behaviors.FileIconBehaviorSourceForLabelControl), DevExpress.Utils.Behaviors.Common.FileIconSize.Small, ((System.Drawing.Image)(resources.GetObject("labelControl11.Behaviors"))), null)))});
-            this.labelControl11.Location = new System.Drawing.Point(3, 227);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(104, 15);
-            this.labelControl11.TabIndex = 18;
-            this.labelControl11.Text = "Enter an ID# to search";
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.simpleButton4.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton4.ImageUri.Uri = "Refresh";
+            this.simpleButton4.Location = new System.Drawing.Point(527, 39);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(84, 47);
+            this.simpleButton4.TabIndex = 16;
+            this.simpleButton4.Text = "RESET";
+            this.simpleButton4.ToolTip = "Add a NEW Employee after entering all the new information on the LEFT";
+            this.simpleButton4.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 346);
+            this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.gridControl2);
             this.Controls.Add(this.lblstat);
@@ -1008,6 +1026,7 @@
         private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource1;
         private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource2;
         private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
     }
 }
 

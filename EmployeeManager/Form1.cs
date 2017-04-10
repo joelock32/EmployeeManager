@@ -674,7 +674,7 @@ namespace EmployeeManager
 
         private void txtEmployeeID_EditValueChanged(object sender, EventArgs e)
         {
-            
+           
             int c = 0;
             lblstat.Text = "";
             NemployeeID = txtEmployeeID.Text;
@@ -743,10 +743,12 @@ namespace EmployeeManager
                         SqlConn.Close();
                         return;
                     }
+                    upload = false;
+                    lblstat.Text = string.Format("Employee {0} already exists but can be updated by making changes on the left then \r\n Click ADD. Check Middle name format if available", NemployeeName);
+                    lblstat.ForeColor = Color.Red;
                 }
                 SqlConn.Close();
-                upload = false;
-                lblstat.Text = string.Format("Employee {0} already exists but can be updated by making changes on the left then \r\n Click ADD. Check Middle name format if available", NemployeeName);
+                lblstat.Text = string.Format("Employee {0} not found", NemployeeID);
                 lblstat.ForeColor = Color.Red;
                 //lblstat =einfo[]
             }
@@ -1028,8 +1030,10 @@ namespace EmployeeManager
                 chkBox.Checked = false;
             }
         }
-        
 
-        
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            RefreshForm();
+        }
     }
 }
