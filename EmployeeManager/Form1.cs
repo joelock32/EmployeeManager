@@ -744,13 +744,19 @@ namespace EmployeeManager
                         return;
                     }
                     upload = false;
-                    lblstat.Text = string.Format("Employee {0} already exists but can be updated by making changes on the left then \r\n Click ADD. Check Middle name format if available", NemployeeName);
-                    lblstat.ForeColor = Color.Red;
+                    if (NemployeeName != "")
+                    {
+                        lblstat.Text = string.Format("Employee {0} already exists but can be updated by making changes on the left then \r\n Click ADD. Check Middle name format if available", NemployeeName);
+                        lblstat.ForeColor = Color.Red;
+                    }
                 }
                 SqlConn.Close();
-                lblstat.Text = string.Format("Employee {0} not found", NemployeeID);
-                lblstat.ForeColor = Color.Red;
-                //lblstat =einfo[]
+                if (NemployeeName == "")
+                {
+                    lblstat.Text = string.Format("Employee {0} not found", NemployeeID);
+                    lblstat.ForeColor = Color.Red;
+                    //lblstat =einfo[]
+                }
             }
         }
 
