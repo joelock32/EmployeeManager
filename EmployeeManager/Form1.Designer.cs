@@ -155,7 +155,7 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(77, 3);
+            this.txtFirstName.Location = new System.Drawing.Point(72, 3);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.Properties.Appearance.Options.UseFont = true;
@@ -165,7 +165,7 @@
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(74, 31);
+            this.txtLastName.Location = new System.Drawing.Point(69, 31);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.Properties.Appearance.Options.UseFont = true;
@@ -211,37 +211,37 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(3, 3);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(68, 16);
+            this.labelControl2.Size = new System.Drawing.Size(63, 15);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "First Name:";
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(3, 31);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(65, 16);
+            this.labelControl1.Size = new System.Drawing.Size(60, 15);
             this.labelControl1.TabIndex = 4;
             this.labelControl1.Text = "Last Name:";
             // 
             // labelControl10
             // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.Options.UseFont = true;
             this.labelControl10.Location = new System.Drawing.Point(3, 59);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(82, 16);
+            this.labelControl10.Size = new System.Drawing.Size(75, 15);
             this.labelControl10.TabIndex = 17;
             this.labelControl10.Text = "Middle Name:";
             // 
             // txtMiddleName
             // 
-            this.txtMiddleName.Location = new System.Drawing.Point(91, 59);
+            this.txtMiddleName.Location = new System.Drawing.Point(84, 59);
             this.txtMiddleName.Name = "txtMiddleName";
             this.txtMiddleName.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMiddleName.Properties.Appearance.Options.UseFont = true;
@@ -251,27 +251,27 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(3, 87);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(30, 16);
+            this.labelControl3.Size = new System.Drawing.Size(30, 15);
             this.labelControl3.TabIndex = 6;
             this.labelControl3.Text = "Title:";
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Location = new System.Drawing.Point(3, 115);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(64, 16);
+            this.labelControl4.Size = new System.Drawing.Size(61, 15);
             this.labelControl4.TabIndex = 7;
             this.labelControl4.Text = "Supervisor:";
             // 
             // txtBoss
             // 
-            this.txtBoss.Location = new System.Drawing.Point(73, 115);
+            this.txtBoss.Location = new System.Drawing.Point(70, 115);
             this.txtBoss.Name = "txtBoss";
             this.txtBoss.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoss.Properties.Appearance.Options.UseFont = true;
@@ -286,18 +286,18 @@
             // 
             // labelControl6
             // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Location = new System.Drawing.Point(3, 143);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(59, 16);
+            this.labelControl6.Size = new System.Drawing.Size(56, 15);
             this.labelControl6.TabIndex = 9;
             this.labelControl6.Text = "Hire Date:";
             // 
             // txtDate
             // 
             this.txtDate.EditValue = null;
-            this.txtDate.Location = new System.Drawing.Point(68, 143);
+            this.txtDate.Location = new System.Drawing.Point(65, 143);
             this.txtDate.Name = "txtDate";
             this.txtDate.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.Properties.Appearance.Options.UseFont = true;
@@ -317,17 +317,17 @@
             // 
             // labelControl7
             // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Location = new System.Drawing.Point(3, 171);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(45, 16);
+            this.labelControl7.Size = new System.Drawing.Size(42, 15);
             this.labelControl7.TabIndex = 11;
             this.labelControl7.Text = "DeptID:";
             // 
             // txtDeptID
             // 
-            this.txtDeptID.Location = new System.Drawing.Point(54, 171);
+            this.txtDeptID.Location = new System.Drawing.Point(51, 171);
             this.txtDeptID.Name = "txtDeptID";
             this.txtDeptID.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDeptID.Properties.Appearance.Options.UseFont = true;
@@ -337,17 +337,17 @@
             // 
             // labelControl8
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(114, 171);
+            this.labelControl8.Location = new System.Drawing.Point(111, 171);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(29, 16);
+            this.labelControl8.Size = new System.Drawing.Size(30, 15);
             this.labelControl8.TabIndex = 13;
             this.labelControl8.Text = "LOC:";
             // 
             // txtLOC
             // 
-            this.txtLOC.Location = new System.Drawing.Point(149, 171);
+            this.txtLOC.Location = new System.Drawing.Point(147, 171);
             this.txtLOC.Name = "txtLOC";
             this.txtLOC.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLOC.Properties.Appearance.Options.UseFont = true;
@@ -357,17 +357,17 @@
             // 
             // labelControl9
             // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.Options.UseFont = true;
             this.labelControl9.Location = new System.Drawing.Point(3, 199);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(75, 16);
+            this.labelControl9.Size = new System.Drawing.Size(68, 15);
             this.labelControl9.TabIndex = 15;
             this.labelControl9.Text = "EmployeeID:";
             // 
             // txtEmployeeID
             // 
-            this.txtEmployeeID.Location = new System.Drawing.Point(84, 199);
+            this.txtEmployeeID.Location = new System.Drawing.Point(77, 199);
             this.txtEmployeeID.Name = "txtEmployeeID";
             this.txtEmployeeID.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmployeeID.Properties.Appearance.Options.UseFont = true;
@@ -381,7 +381,7 @@
             this.labelControl11.Appearance.Options.UseFont = true;
             this.behaviorManager1.SetBehaviors(this.labelControl11, new DevExpress.Utils.Behaviors.Behavior[] {
             ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.Utils.Behaviors.Common.FileIconBehavior.Create(typeof(DevExpress.XtraEditors.Behaviors.FileIconBehaviorSourceForLabelControl), DevExpress.Utils.Behaviors.Common.FileIconSize.Small, ((System.Drawing.Image)(resources.GetObject("labelControl11.Behaviors"))), null)))});
-            this.labelControl11.Location = new System.Drawing.Point(3, 227);
+            this.labelControl11.Location = new System.Drawing.Point(150, 199);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(104, 15);
             this.labelControl11.TabIndex = 18;
@@ -394,12 +394,12 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal;
             this.labelControl5.Location = new System.Drawing.Point(5, 6);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(220, 27);
+            this.labelControl5.Size = new System.Drawing.Size(199, 24);
             this.labelControl5.TabIndex = 5;
             this.labelControl5.Text = "Employee Information";
             // 
@@ -440,7 +440,7 @@
             this.radioGroup1.Location = new System.Drawing.Point(288, 246);
             this.radioGroup1.Name = "radioGroup1";
             this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.radioGroup1.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioGroup1.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
             this.radioGroup1.Properties.Appearance.Options.UseFont = true;
             this.radioGroup1.Properties.Columns = 3;
@@ -475,6 +475,7 @@
             this.hyperLinkEdit1.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.hyperLinkEdit1.Size = new System.Drawing.Size(265, 20);
             this.hyperLinkEdit1.TabIndex = 10;
+            this.hyperLinkEdit1.Visible = false;
             this.hyperLinkEdit1.OpenLink += new DevExpress.XtraEditors.Controls.OpenLinkEventHandler(this.hyperLinkEdit1_OpenLink);
             // 
             // flowLayoutPanel2
@@ -493,7 +494,7 @@
             this.radioGroup2.Location = new System.Drawing.Point(3, 162);
             this.radioGroup2.Name = "radioGroup2";
             this.radioGroup2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.radioGroup2.Properties.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioGroup2.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioGroup2.Properties.Appearance.Options.UseBackColor = true;
             this.radioGroup2.Properties.Appearance.Options.UseFont = true;
             this.radioGroup2.Properties.Columns = 2;
@@ -694,11 +695,11 @@
             // 
             // lblstat
             // 
-            this.lblstat.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblstat.Appearance.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblstat.Appearance.Options.UseFont = true;
             this.lblstat.Location = new System.Drawing.Point(5, 287);
             this.lblstat.Name = "lblstat";
-            this.lblstat.Size = new System.Drawing.Size(84, 15);
+            this.lblstat.Size = new System.Drawing.Size(79, 13);
             this.lblstat.TabIndex = 13;
             this.lblstat.Text = "labelControl10";
             // 
@@ -887,11 +888,11 @@
             // 
             // lblVersion
             // 
-            this.lblVersion.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.Appearance.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.Appearance.Options.UseFont = true;
             this.lblVersion.Location = new System.Drawing.Point(405, 325);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(36, 15);
+            this.lblVersion.Size = new System.Drawing.Size(34, 14);
             this.lblVersion.TabIndex = 15;
             this.lblVersion.Text = "Version";
             // 
