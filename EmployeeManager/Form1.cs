@@ -155,7 +155,7 @@ namespace EmployeeManager
                         connection.Open();
 
                         command.ExecuteNonQuery();
-                        //connection.Close();
+                        connection.Close();
                     }
                 }
 
@@ -193,7 +193,7 @@ namespace EmployeeManager
                         connection.Open();
 
                         command.ExecuteNonQuery();
-                        //connection.Close();
+                        connection.Close();
                     }
 
 
@@ -365,7 +365,7 @@ namespace EmployeeManager
                         using (SqlConnection connection = new SqlConnection(connectionString))
                         {
                             SqlCommand command = connection.CreateCommand();
-                            command.CommandText = "update @MainTable set EmployeeID= @NemployeeID,Location=@NemployeeLOC,Name=@NemployeeName,Title=@NemployeeTitle,DeptID= @NemployeeDeptID,HireDate=@NemployeeHireDate,SupervisorName=@NemployeeSupervisorName where EmployeeID= @NemployeeID ";
+                            command.CommandText = string.Format("update {0} set EmployeeID= @NemployeeID,Location=@NemployeeLOC,Name=@NemployeeName,Title=@NemployeeTitle,DeptID= @NemployeeDeptID,HireDate=@NemployeeHireDate,SupervisorName=@NemployeeSupervisorName where EmployeeID= @NemployeeID ", MainTable);
                             command.Parameters.AddWithValue("@NemployeeID", NemployeeID);
                             command.Parameters.AddWithValue("@NemployeeLOC", NemployeeLOC);
                             command.Parameters.AddWithValue("@NemployeeName", NemployeeName);
@@ -373,12 +373,12 @@ namespace EmployeeManager
                             command.Parameters.AddWithValue("@NemployeeDeptID", NemployeeDeptID);
                             command.Parameters.AddWithValue("@NemployeeHireDate", NemployeeHireDate);
                             command.Parameters.AddWithValue("@NemployeeSupervisorName", NemployeeSupervisorName);
-                            command.Parameters.AddWithValue("@MainTable", MainTable);
+                            //command.Parameters.AddWithValue("@MainTable", MainTable);
 
                             connection.Open();
 
                             command.ExecuteNonQuery();
-                            //connection.Close();
+                            connection.Close();
                         }
 
 
@@ -401,7 +401,7 @@ namespace EmployeeManager
                         using (SqlConnection connection = new SqlConnection(connectionString))
                         {
                             SqlCommand command = connection.CreateCommand();
-                            command.CommandText = "insert into @MainTable  (EmployeeID,Location,Name,Title,DeptID,HireDate,SupervisorName,FullPart,Reg_Temp) Values(@NemployeeID, @NemployeeLOC, @NemployeeName, @NemployeeTitle, @NemployeeDeptID, @NemployeeHireDate, @NemployeeSupervisorName, @EMPLOYEETYPE, @EMPLOYEETYPE)";
+                            command.CommandText = string.Format("insert into {0} (EmployeeID,Location,Name,Title,DeptID,HireDate,SupervisorName,FullPart,Reg_Temp) Values(@NemployeeID, @NemployeeLOC, @NemployeeName, @NemployeeTitle, @NemployeeDeptID, @NemployeeHireDate, @NemployeeSupervisorName, @EMPLOYEETYPE, @EMPLOYEETYPE)", MainTable);
                             command.Parameters.AddWithValue("@NemployeeID", NemployeeID);
                             command.Parameters.AddWithValue("@NemployeeLOC", NemployeeLOC);
                             command.Parameters.AddWithValue("@NemployeeName", NemployeeName);
@@ -416,13 +416,13 @@ namespace EmployeeManager
                             connection.Open();
 
                             command.ExecuteNonQuery();
-                            //connection.Close();
+                            connection.Close();
                         }
 
 
                     }
                     upload = false;
-                    lblstat.Text = "Upload of Employees Completed! ";
+                    lblstat.Text = string.Format("Upload of{0} Succsesful!", NemployeeName);
                     lblstat.Update();
                     //return;
                 }
@@ -447,7 +447,11 @@ namespace EmployeeManager
 
             }
             Console.WriteLine(result); // <-- For debugging use.
-
+            if(upload==false)
+            {
+                lblstat.Text = string.Format("Upload of {0} Succsesful!", xfile);
+                lblstat.Update();
+            }
 
         }
 
@@ -512,7 +516,7 @@ namespace EmployeeManager
                             using (SqlConnection connection = new SqlConnection(connectionString))
                             {
                                 SqlCommand command = connection.CreateCommand();
-                                command.CommandText = "update " + MainTable + " set EmployeeID=@NemployeeID,Location=@NemployeeLOC,Name=@NemployeeName,Title=@NemployeeTitle,DeptID=@NemployeeDeptID,HireDate=@NemployeeHireDate,SupervisorName=@NemployeeSupervisorName where EmployeeID=@NemployeeID";
+                                command.CommandText = string.Format("update {0} set EmployeeID=@NemployeeID,Location=@NemployeeLOC,Name=@NemployeeName,Title=@NemployeeTitle,DeptID=@NemployeeDeptID,HireDate=@NemployeeHireDate,SupervisorName=@NemployeeSupervisorName where EmployeeID=@NemployeeID", MainTable);
                                 command.Parameters.AddWithValue("@NemployeeID", NemployeeID);
                                 command.Parameters.AddWithValue("@NemployeeLOC", NemployeeLOC);
                                 command.Parameters.AddWithValue("@NemployeeName", NemployeeName);
@@ -525,7 +529,7 @@ namespace EmployeeManager
                                 connection.Open();
 
                                 command.ExecuteNonQuery();
-                                //connection.Close();
+                                connection.Close();
                             }
 
 
@@ -587,7 +591,7 @@ namespace EmployeeManager
                                 connection.Open();
 
                                 command.ExecuteNonQuery();
-                                //connection.Close();
+                                connection.Close();
                             }
                         lblstat.Text = "Added Employee: " + NemployeeName;
                         lblstat.Update();
@@ -696,7 +700,7 @@ namespace EmployeeManager
                                 connection.Open();
 
                                 command.ExecuteNonQuery();
-                                //connection.Close();
+                                connection.Close();
                             }
 
                             lblstat.Text = "Added Employee: " + NemployeeName;
@@ -761,7 +765,7 @@ namespace EmployeeManager
                                 connection.Open();
 
                                 command.ExecuteNonQuery();
-                                //connection.Close();
+                                connection.Close();
                             }
                             lblstat.Text = "Added Employee: " + NemployeeName;
                             lblstat.Update();
