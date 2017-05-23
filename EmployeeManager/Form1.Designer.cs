@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo1 = new DevExpress.DataAccess.Excel.FieldInfo();
@@ -39,13 +38,13 @@
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo6 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo7 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo8 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings1 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
+            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions1 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings1);
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo9 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo10 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo11 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo12 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo13 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings1 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
-            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions1 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings1);
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo14 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo15 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo16 = new DevExpress.DataAccess.Excel.FieldInfo();
@@ -54,12 +53,22 @@
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo19 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo20 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo21 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings2 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
+            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions2 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings2);
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo22 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo23 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo24 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo25 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo26 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo27 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo28 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo29 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo30 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo31 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo32 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo33 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo34 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo35 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.CsvSourceOptions csvSourceOptions1 = new DevExpress.DataAccess.Excel.CsvSourceOptions();
             this.txtFirstName = new DevExpress.XtraEditors.TextEdit();
             this.txtLastName = new DevExpress.XtraEditors.TextEdit();
@@ -88,30 +97,20 @@
             this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.hyperLinkEdit1 = new DevExpress.XtraEditors.HyperLinkEdit();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.radioGroup2 = new DevExpress.XtraEditors.RadioGroup();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.employee_InformationTableAdapter = new EmployeeManager.QcrrDataSetTableAdapters.Employee_InformationTableAdapter();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.excelDataSource1 = new DevExpress.DataAccess.Excel.ExcelDataSource();
+            this.excelBindingSource = new System.Windows.Forms.BindingSource();
+            this.excelDataSource3 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colEmployeeID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colLocation = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTitle = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDeptID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEmpGroup = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSupervisorName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colFullPart = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colShift = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colReg_Temp = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colWork_Center = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCostCenter = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colHireDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.excelDataSource1 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.lblstat = new DevExpress.XtraEditors.LabelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.excelBindingSource1 = new System.Windows.Forms.BindingSource();
             this.excelDataSource2 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colEmployeeID1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -130,6 +129,14 @@
             this.colHireDate1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lblVersion = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.colFileNumber = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPayrollName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colReportsToLastName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colReportsToFirstName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDepartmentNumber = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHireDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colJobTitleDescription = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPositionStatus = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJobTitle.Properties)).BeginInit();
@@ -148,8 +155,10 @@
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -524,48 +533,42 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.DataSource = this.excelDataSource1;
-            this.gridControl1.Location = new System.Drawing.Point(5, 353);
+            this.gridControl1.DataSource = this.excelDataSource3;
+            this.gridControl1.Location = new System.Drawing.Point(5, 345);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(523, 88);
+            this.gridControl1.Size = new System.Drawing.Size(523, 96);
             this.gridControl1.TabIndex = 12;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
-            // excelDataSource1
+            // excelBindingSource
             // 
-            this.excelDataSource1.FileName = "C:\\Users\\lockh_j.TRANSDEV.COM\\Documents\\Visual Studio 2015\\Projects\\EmployeeManag" +
-    "er\\EmployeeManager\\bin\\Debug\\US Employee Information Book.xlsx";
-            this.excelDataSource1.Name = "excelDataSource1";
-            this.excelDataSource1.ResultSchemaSerializable = resources.GetString("excelDataSource1.ResultSchemaSerializable");
-            fieldInfo1.Name = "EmployeeID";
+            this.excelBindingSource.DataSource = this.excelDataSource3;
+            // 
+            // excelDataSource3
+            // 
+            this.excelDataSource3.FileName = "C:\\Users\\lockh_j.TRANSDEV.COM\\Documents\\Employee List\\Copy of etraveler_05_18_201" +
+    "7_10_01_27_AM.xlsx";
+            this.excelDataSource3.Name = "excelDataSource3";
+            this.excelDataSource3.ResultSchemaSerializable = resources.GetString("excelDataSource3.ResultSchemaSerializable");
+            fieldInfo1.Name = "File Number";
             fieldInfo1.Type = typeof(string);
-            fieldInfo2.Name = "Location";
+            fieldInfo2.Name = "Payroll Name";
             fieldInfo2.Type = typeof(string);
-            fieldInfo3.Name = "Name";
+            fieldInfo3.Name = "Reports To Last Name";
             fieldInfo3.Type = typeof(string);
-            fieldInfo4.Name = "Title";
+            fieldInfo4.Name = "Reports To First Name";
             fieldInfo4.Type = typeof(string);
-            fieldInfo5.Name = "DeptID";
+            fieldInfo5.Name = "Department Number";
             fieldInfo5.Type = typeof(string);
-            fieldInfo6.Name = "EmpGroup";
-            fieldInfo6.Type = typeof(string);
-            fieldInfo7.Name = "SupervisorName";
+            fieldInfo6.Name = "Hire Date";
+            fieldInfo6.Type = typeof(System.DateTime);
+            fieldInfo7.Name = "Job Title Description";
             fieldInfo7.Type = typeof(string);
-            fieldInfo8.Name = "FullPart";
+            fieldInfo8.Name = "Position Status";
             fieldInfo8.Type = typeof(string);
-            fieldInfo9.Name = "Shift";
-            fieldInfo9.Type = typeof(string);
-            fieldInfo10.Name = "Reg_Temp";
-            fieldInfo10.Type = typeof(string);
-            fieldInfo11.Name = "Work_Center";
-            fieldInfo11.Type = typeof(string);
-            fieldInfo12.Name = "CostCenter";
-            fieldInfo12.Type = typeof(string);
-            fieldInfo13.Name = "HireDate";
-            fieldInfo13.Type = typeof(string);
-            this.excelDataSource1.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
+            this.excelDataSource3.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
             fieldInfo1,
             fieldInfo2,
             fieldInfo3,
@@ -573,126 +576,76 @@
             fieldInfo5,
             fieldInfo6,
             fieldInfo7,
-            fieldInfo8,
-            fieldInfo9,
-            fieldInfo10,
-            fieldInfo11,
-            fieldInfo12,
-            fieldInfo13});
+            fieldInfo8});
             excelWorksheetSettings1.CellRange = null;
-            excelWorksheetSettings1.WorksheetName = "Sheet1";
+            excelWorksheetSettings1.WorksheetName = "Data";
             excelSourceOptions1.ImportSettings = excelWorksheetSettings1;
-            this.excelDataSource1.SourceOptions = excelSourceOptions1;
+            this.excelDataSource3.SourceOptions = excelSourceOptions1;
             // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colEmployeeID,
-            this.colLocation,
-            this.colName,
-            this.colTitle,
-            this.colDeptID,
-            this.colEmpGroup,
-            this.colSupervisorName,
-            this.colFullPart,
-            this.colShift,
-            this.colReg_Temp,
-            this.colWork_Center,
-            this.colCostCenter,
-            this.colHireDate});
+            this.colFileNumber,
+            this.colPayrollName,
+            this.colReportsToLastName,
+            this.colReportsToFirstName,
+            this.colDepartmentNumber,
+            this.colHireDate,
+            this.colJobTitleDescription,
+            this.colPositionStatus});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
-            // colEmployeeID
+            // excelDataSource1
             // 
-            this.colEmployeeID.FieldName = "EmployeeID";
-            this.colEmployeeID.Name = "colEmployeeID";
-            this.colEmployeeID.Visible = true;
-            this.colEmployeeID.VisibleIndex = 0;
-            // 
-            // colLocation
-            // 
-            this.colLocation.FieldName = "Location";
-            this.colLocation.Name = "colLocation";
-            this.colLocation.Visible = true;
-            this.colLocation.VisibleIndex = 1;
-            // 
-            // colName
-            // 
-            this.colName.FieldName = "Name";
-            this.colName.Name = "colName";
-            this.colName.Visible = true;
-            this.colName.VisibleIndex = 2;
-            // 
-            // colTitle
-            // 
-            this.colTitle.FieldName = "Title";
-            this.colTitle.Name = "colTitle";
-            this.colTitle.Visible = true;
-            this.colTitle.VisibleIndex = 3;
-            // 
-            // colDeptID
-            // 
-            this.colDeptID.FieldName = "DeptID";
-            this.colDeptID.Name = "colDeptID";
-            this.colDeptID.Visible = true;
-            this.colDeptID.VisibleIndex = 4;
-            // 
-            // colEmpGroup
-            // 
-            this.colEmpGroup.FieldName = "EmpGroup";
-            this.colEmpGroup.Name = "colEmpGroup";
-            this.colEmpGroup.Visible = true;
-            this.colEmpGroup.VisibleIndex = 5;
-            // 
-            // colSupervisorName
-            // 
-            this.colSupervisorName.FieldName = "SupervisorName";
-            this.colSupervisorName.Name = "colSupervisorName";
-            this.colSupervisorName.Visible = true;
-            this.colSupervisorName.VisibleIndex = 6;
-            // 
-            // colFullPart
-            // 
-            this.colFullPart.FieldName = "FullPart";
-            this.colFullPart.Name = "colFullPart";
-            this.colFullPart.Visible = true;
-            this.colFullPart.VisibleIndex = 7;
-            // 
-            // colShift
-            // 
-            this.colShift.FieldName = "Shift";
-            this.colShift.Name = "colShift";
-            this.colShift.Visible = true;
-            this.colShift.VisibleIndex = 8;
-            // 
-            // colReg_Temp
-            // 
-            this.colReg_Temp.FieldName = "Reg_Temp";
-            this.colReg_Temp.Name = "colReg_Temp";
-            this.colReg_Temp.Visible = true;
-            this.colReg_Temp.VisibleIndex = 9;
-            // 
-            // colWork_Center
-            // 
-            this.colWork_Center.FieldName = "Work_Center";
-            this.colWork_Center.Name = "colWork_Center";
-            this.colWork_Center.Visible = true;
-            this.colWork_Center.VisibleIndex = 10;
-            // 
-            // colCostCenter
-            // 
-            this.colCostCenter.FieldName = "CostCenter";
-            this.colCostCenter.Name = "colCostCenter";
-            this.colCostCenter.Visible = true;
-            this.colCostCenter.VisibleIndex = 11;
-            // 
-            // colHireDate
-            // 
-            this.colHireDate.FieldName = "HireDate";
-            this.colHireDate.Name = "colHireDate";
-            this.colHireDate.Visible = true;
-            this.colHireDate.VisibleIndex = 12;
+            this.excelDataSource1.FileName = "C:\\Users\\lockh_j.TRANSDEV.COM\\Documents\\Visual Studio 2015\\Projects\\EmployeeManag" +
+    "er\\EmployeeManager\\bin\\Debug\\US Employee Information Book.xlsx";
+            this.excelDataSource1.Name = "excelDataSource1";
+            this.excelDataSource1.ResultSchemaSerializable = resources.GetString("excelDataSource1.ResultSchemaSerializable");
+            fieldInfo9.Name = "EmployeeID";
+            fieldInfo9.Type = typeof(string);
+            fieldInfo10.Name = "Location";
+            fieldInfo10.Type = typeof(string);
+            fieldInfo11.Name = "Name";
+            fieldInfo11.Type = typeof(string);
+            fieldInfo12.Name = "Title";
+            fieldInfo12.Type = typeof(string);
+            fieldInfo13.Name = "DeptID";
+            fieldInfo13.Type = typeof(string);
+            fieldInfo14.Name = "EmpGroup";
+            fieldInfo14.Type = typeof(string);
+            fieldInfo15.Name = "SupervisorName";
+            fieldInfo15.Type = typeof(string);
+            fieldInfo16.Name = "FullPart";
+            fieldInfo16.Type = typeof(string);
+            fieldInfo17.Name = "Shift";
+            fieldInfo17.Type = typeof(string);
+            fieldInfo18.Name = "Reg_Temp";
+            fieldInfo18.Type = typeof(string);
+            fieldInfo19.Name = "Work_Center";
+            fieldInfo19.Type = typeof(string);
+            fieldInfo20.Name = "CostCenter";
+            fieldInfo20.Type = typeof(string);
+            fieldInfo21.Name = "HireDate";
+            fieldInfo21.Type = typeof(string);
+            this.excelDataSource1.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
+            fieldInfo9,
+            fieldInfo10,
+            fieldInfo11,
+            fieldInfo12,
+            fieldInfo13,
+            fieldInfo14,
+            fieldInfo15,
+            fieldInfo16,
+            fieldInfo17,
+            fieldInfo18,
+            fieldInfo19,
+            fieldInfo20,
+            fieldInfo21});
+            excelWorksheetSettings2.CellRange = null;
+            excelWorksheetSettings2.WorksheetName = "Sheet1";
+            excelSourceOptions2.ImportSettings = excelWorksheetSettings2;
+            this.excelDataSource1.SourceOptions = excelSourceOptions2;
             // 
             // lblstat
             // 
@@ -706,63 +659,67 @@
             // 
             // gridControl2
             // 
-            this.gridControl2.DataSource = this.excelDataSource2;
+            this.gridControl2.DataSource = this.excelBindingSource1;
             this.gridControl2.Location = new System.Drawing.Point(5, 447);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(523, 87);
+            this.gridControl2.Size = new System.Drawing.Size(523, 189);
             this.gridControl2.TabIndex = 14;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
+            // 
+            // excelBindingSource1
+            // 
+            this.excelBindingSource1.DataSource = this.excelDataSource2;
             // 
             // excelDataSource2
             // 
             this.excelDataSource2.FileName = "C:\\Users\\lockh_j.TRANSDEV.COM\\Documents\\Employee List\\Sheet1.csv";
             this.excelDataSource2.Name = "excelDataSource2";
             this.excelDataSource2.ResultSchemaSerializable = resources.GetString("excelDataSource2.ResultSchemaSerializable");
-            fieldInfo14.Name = "EmployeeID";
-            fieldInfo14.Type = typeof(string);
-            fieldInfo15.Name = "Location";
-            fieldInfo15.Type = typeof(double);
-            fieldInfo16.Name = "Name";
-            fieldInfo16.Type = typeof(string);
-            fieldInfo17.Name = "Title";
-            fieldInfo17.Type = typeof(string);
-            fieldInfo18.Name = "DeptID";
-            fieldInfo18.Type = typeof(double);
-            fieldInfo19.Name = "EmpGroup";
-            fieldInfo19.Type = typeof(string);
-            fieldInfo20.Name = "SupervisorName";
-            fieldInfo20.Type = typeof(string);
-            fieldInfo21.Name = "FullPart";
-            fieldInfo21.Type = typeof(string);
-            fieldInfo22.Name = "Shift";
+            fieldInfo22.Name = "EmployeeID";
             fieldInfo22.Type = typeof(string);
-            fieldInfo23.Name = "Reg_Temp";
-            fieldInfo23.Type = typeof(string);
-            fieldInfo24.Name = "Work_Center";
-            fieldInfo24.Type = typeof(double);
-            fieldInfo25.Name = "CostCenter";
+            fieldInfo23.Name = "Location";
+            fieldInfo23.Type = typeof(double);
+            fieldInfo24.Name = "Name";
+            fieldInfo24.Type = typeof(string);
+            fieldInfo25.Name = "Title";
             fieldInfo25.Type = typeof(string);
-            fieldInfo26.Name = "rowguid";
-            fieldInfo26.Type = typeof(string);
-            fieldInfo27.Name = "HireDate";
-            fieldInfo27.Type = typeof(System.DateTime);
+            fieldInfo26.Name = "DeptID";
+            fieldInfo26.Type = typeof(double);
+            fieldInfo27.Name = "EmpGroup";
+            fieldInfo27.Type = typeof(string);
+            fieldInfo28.Name = "SupervisorName";
+            fieldInfo28.Type = typeof(string);
+            fieldInfo29.Name = "FullPart";
+            fieldInfo29.Type = typeof(string);
+            fieldInfo30.Name = "Shift";
+            fieldInfo30.Type = typeof(string);
+            fieldInfo31.Name = "Reg_Temp";
+            fieldInfo31.Type = typeof(string);
+            fieldInfo32.Name = "Work_Center";
+            fieldInfo32.Type = typeof(double);
+            fieldInfo33.Name = "CostCenter";
+            fieldInfo33.Type = typeof(string);
+            fieldInfo34.Name = "rowguid";
+            fieldInfo34.Type = typeof(string);
+            fieldInfo35.Name = "HireDate";
+            fieldInfo35.Type = typeof(System.DateTime);
             this.excelDataSource2.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
-            fieldInfo14,
-            fieldInfo15,
-            fieldInfo16,
-            fieldInfo17,
-            fieldInfo18,
-            fieldInfo19,
-            fieldInfo20,
-            fieldInfo21,
             fieldInfo22,
             fieldInfo23,
             fieldInfo24,
             fieldInfo25,
             fieldInfo26,
-            fieldInfo27});
+            fieldInfo27,
+            fieldInfo28,
+            fieldInfo29,
+            fieldInfo30,
+            fieldInfo31,
+            fieldInfo32,
+            fieldInfo33,
+            fieldInfo34,
+            fieldInfo35});
             csvSourceOptions1.Culture = new System.Globalization.CultureInfo("");
             csvSourceOptions1.DetectNewlineType = true;
             csvSourceOptions1.DetectValueSeparator = true;
@@ -913,11 +870,67 @@
             this.simpleButton4.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
+            // colFileNumber
+            // 
+            this.colFileNumber.FieldName = "File Number";
+            this.colFileNumber.Name = "colFileNumber";
+            this.colFileNumber.Visible = true;
+            this.colFileNumber.VisibleIndex = 0;
+            // 
+            // colPayrollName
+            // 
+            this.colPayrollName.FieldName = "Payroll Name";
+            this.colPayrollName.Name = "colPayrollName";
+            this.colPayrollName.Visible = true;
+            this.colPayrollName.VisibleIndex = 1;
+            // 
+            // colReportsToLastName
+            // 
+            this.colReportsToLastName.FieldName = "Reports To Last Name";
+            this.colReportsToLastName.Name = "colReportsToLastName";
+            this.colReportsToLastName.Visible = true;
+            this.colReportsToLastName.VisibleIndex = 2;
+            // 
+            // colReportsToFirstName
+            // 
+            this.colReportsToFirstName.FieldName = "Reports To First Name";
+            this.colReportsToFirstName.Name = "colReportsToFirstName";
+            this.colReportsToFirstName.Visible = true;
+            this.colReportsToFirstName.VisibleIndex = 3;
+            // 
+            // colDepartmentNumber
+            // 
+            this.colDepartmentNumber.FieldName = "Department Number";
+            this.colDepartmentNumber.Name = "colDepartmentNumber";
+            this.colDepartmentNumber.Visible = true;
+            this.colDepartmentNumber.VisibleIndex = 4;
+            // 
+            // colHireDate
+            // 
+            this.colHireDate.FieldName = "Hire Date";
+            this.colHireDate.Name = "colHireDate";
+            this.colHireDate.Visible = true;
+            this.colHireDate.VisibleIndex = 5;
+            // 
+            // colJobTitleDescription
+            // 
+            this.colJobTitleDescription.FieldName = "Job Title Description";
+            this.colJobTitleDescription.Name = "colJobTitleDescription";
+            this.colJobTitleDescription.Visible = true;
+            this.colJobTitleDescription.VisibleIndex = 6;
+            // 
+            // colPositionStatus
+            // 
+            this.colPositionStatus.FieldName = "Position Status";
+            this.colPositionStatus.Name = "colPositionStatus";
+            this.colPositionStatus.Visible = true;
+            this.colPositionStatus.VisibleIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 346);
+            this.ClientSize = new System.Drawing.Size(623, 692);
             this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.gridControl2);
@@ -950,8 +963,10 @@
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -998,19 +1013,6 @@
         private DevExpress.XtraEditors.LabelControl lblVersion;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.TextEdit txtMiddleName;
-        private DevExpress.XtraGrid.Columns.GridColumn colEmployeeID;
-        private DevExpress.XtraGrid.Columns.GridColumn colLocation;
-        private DevExpress.XtraGrid.Columns.GridColumn colName;
-        private DevExpress.XtraGrid.Columns.GridColumn colTitle;
-        private DevExpress.XtraGrid.Columns.GridColumn colDeptID;
-        private DevExpress.XtraGrid.Columns.GridColumn colEmpGroup;
-        private DevExpress.XtraGrid.Columns.GridColumn colSupervisorName;
-        private DevExpress.XtraGrid.Columns.GridColumn colFullPart;
-        private DevExpress.XtraGrid.Columns.GridColumn colShift;
-        private DevExpress.XtraGrid.Columns.GridColumn colReg_Temp;
-        private DevExpress.XtraGrid.Columns.GridColumn colWork_Center;
-        private DevExpress.XtraGrid.Columns.GridColumn colCostCenter;
-        private DevExpress.XtraGrid.Columns.GridColumn colHireDate;
         private DevExpress.XtraGrid.Columns.GridColumn colEmployeeID1;
         private DevExpress.XtraGrid.Columns.GridColumn colLocation1;
         private DevExpress.XtraGrid.Columns.GridColumn colName1;
@@ -1029,6 +1031,17 @@
         private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource2;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource3;
+        private System.Windows.Forms.BindingSource excelBindingSource;
+        private System.Windows.Forms.BindingSource excelBindingSource1;
+        private DevExpress.XtraGrid.Columns.GridColumn colFileNumber;
+        private DevExpress.XtraGrid.Columns.GridColumn colPayrollName;
+        private DevExpress.XtraGrid.Columns.GridColumn colReportsToLastName;
+        private DevExpress.XtraGrid.Columns.GridColumn colReportsToFirstName;
+        private DevExpress.XtraGrid.Columns.GridColumn colDepartmentNumber;
+        private DevExpress.XtraGrid.Columns.GridColumn colHireDate;
+        private DevExpress.XtraGrid.Columns.GridColumn colJobTitleDescription;
+        private DevExpress.XtraGrid.Columns.GridColumn colPositionStatus;
     }
 }
 
