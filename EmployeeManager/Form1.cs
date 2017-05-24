@@ -22,7 +22,7 @@ namespace EmployeeManager
     {
         static string CallingAppName = "EmployeeManager.exe"; //the name of this app used for login dll
         public string MainTable = "qcrr.dbo.Employee_Information_Test";//Table being written to. (Change to qcrr.dbo.Employee_Information to go live)qcrr.dbo.Employee_Information_Test
-        public string BUTable = "qcrr.dbo.Employee_Information_Tmp";//backup table(its cleared before each backup)
+        public string BUTable = "qcrr.dbo.Employee_Information_BACKUP";//backup table(its cleared before each backup)
         public string BUTableCN = "qcrr.dbo.Employee_Information_china";//backup table(its cleared before each backup)
         const String ConnStr = "Data Source=etrav-hack;Initial Catalog=qcrr;Persist Security Info=True;User ID=Application;Password=noitacilppa";//US
         const String ConnStr1 = "Data Source=etrav-hack;Initial Catalog=qcrr;Persist Security Info=True;User ID=Application;Password=noitacilppa";//CHINA "was using as a test
@@ -283,6 +283,7 @@ namespace EmployeeManager
 
             if (xfile.Contains(".txt"))//upload a stupid text file
             {
+                //LOCAREA == "16";
                 //issue a backup
                 employBU();
                 string lineOfText;
@@ -341,7 +342,7 @@ namespace EmployeeManager
                         d = NemployeeDeptID.Length;
                         line = line.Remove(0, d + 1);
                         a = line.IndexOf("~").ToString();
-                        NemployeeHireDate = (Convert.ToDateTime(line)).ToString();
+                        NemployeeHireDate = (Convert.ToDateTime(line)).ToShortDateString();
                     }
                     catch (ArgumentNullException)
                     {
@@ -363,20 +364,20 @@ namespace EmployeeManager
                     sda.Fill(dt);
                     if (Convert.ToInt32(dt.Rows[0][0]) > 0)//update
                     {
-                        var S1 = string.Format("update {7} set EmployeeID='{0}',Location='{1}',Name='{2}',Title='{3}',DeptID='{4}',HireDate='{5}',SupervisorName='{6}'where EmployeeID='{0}' ", NemployeeID, NemployeeLOC, NemployeeName, NemployeeTitle, NemployeeDeptID, NemployeeHireDate, NemployeeSupervisorName, MainTable);
-                        bool success = mSQL.myInsert("Etrav-Hack", S1);
-                        if (success == false)
-                        {
-                            upload = false;
-                            lblstat.Text = string.Format("Upload FAILED for: {0}{1}{2}{3} \r\n {4}{5}{6}", NemployeeID, NemployeeLOC, NemployeeName, NemployeeTitle, NemployeeDeptID, NemployeeHireDate, NemployeeSupervisorName);
-                            lblstat.Update();
-                        }
+                       // var S1 = string.Format("update {7} set EmployeeID='{0}',Location='{1}',Name='{2}',Title='{3}',DeptID='{4}',HireDate='{5}',SupervisorName='{6}'where EmployeeID='{0}' ", NemployeeID, NemployeeLOC, NemployeeName, NemployeeTitle, NemployeeDeptID, NemployeeHireDate, NemployeeSupervisorName, MainTable);
+                        //bool success = mSQL.myInsert("Etrav-Hack", S1);
+                        //if (success == false)
+                        //{
+                            //upload = false;
+                            //lblstat.Text = string.Format("Upload FAILED for: {0}{1}{2}{3} \r\n {4}{5}{6}", NemployeeID, NemployeeLOC, NemployeeName, NemployeeTitle, NemployeeDeptID, NemployeeHireDate, NemployeeSupervisorName);
+                            //lblstat.Update();
+                        //}
 
                         string connectionString = ConnStr;
                         using (SqlConnection connection = new SqlConnection(connectionString))
                         {
                             SqlCommand command = connection.CreateCommand();
-                            command.CommandText = string.Format("update {0} set EmployeeID= @NemployeeID,Location=@NemployeeLOC,Name=@NemployeeName,Title=@NemployeeTitle,DeptID= @NemployeeDeptID,HireDate=@NemployeeHireDate,SupervisorName=@NemployeeSupervisorName where EmployeeID= @NemployeeID ", MainTable);
+                            command.CommandText = string.Format("update {0} set EmployeeID=@NemployeeID,Location=@NemployeeLOC,Name=@NemployeeName,Title=@NemployeeTitle,DeptID=@NemployeeDeptID,HireDate=@NemployeeHireDate,SupervisorName=@NemployeeSupervisorName ,EmpGroup='',Shift='',Work_Center='',CostCenter='' where EmployeeID=@NemployeeID", MainTable);
                             command.Parameters.AddWithValue("@NemployeeID", NemployeeID);
                             command.Parameters.AddWithValue("@NemployeeLOC", NemployeeLOC);
                             command.Parameters.AddWithValue("@NemployeeName", NemployeeName);
@@ -397,22 +398,22 @@ namespace EmployeeManager
                     }
                     else
                     {
-                        var S1 = string.Format("insert into {9}  (EmployeeID,Location,Name,Title,DeptID,HireDate,SupervisorName,FullPart,Reg_Temp) Values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", NemployeeID, NemployeeLOC, NemployeeName, NemployeeTitle, NemployeeDeptID, NemployeeHireDate, NemployeeSupervisorName, EMPLOYEETYPE, EMPLOYEETYPE, MainTable);
-                        bool success = mSQL.myInsert("Etrav-Hack", S1);
-                        if (success == false)
-                        {
-                            upload = false;
-                            lblstat.Text = string.Format("Upload FAILED for: {0}{1}{2}{3} \r\n {4}{5}{6}", NemployeeID, NemployeeLOC, NemployeeName, NemployeeTitle, NemployeeDeptID, NemployeeHireDate, NemployeeSupervisorName);
-                            lblstat.Update();
-                        }
-                        SqlConn.Close();
+                        //var S1 = string.Format("insert into {9}  (EmployeeID,Location,Name,Title,DeptID,HireDate,SupervisorName,FullPart,Reg_Temp) Values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", NemployeeID, NemployeeLOC, NemployeeName, NemployeeTitle, NemployeeDeptID, NemployeeHireDate, NemployeeSupervisorName, EMPLOYEETYPE, EMPLOYEETYPE, MainTable);
+                        //bool success = mSQL.myInsert("Etrav-Hack", S1);
+                        //if (success == false)
+                        //{
+                           // upload = false;
+                            //lblstat.Text = string.Format("Upload FAILED for: {0}{1}{2}{3} \r\n {4}{5}{6}", NemployeeID, NemployeeLOC, NemployeeName, NemployeeTitle, NemployeeDeptID, NemployeeHireDate, NemployeeSupervisorName);
+                           // lblstat.Update();
+                       // }
+                       // SqlConn.Close();
 
 
                         string connectionString = ConnStr;
                         using (SqlConnection connection = new SqlConnection(connectionString))
                         {
                             SqlCommand command = connection.CreateCommand();
-                            command.CommandText = string.Format("insert into {0} (EmployeeID,Location,Name,Title,DeptID,HireDate,SupervisorName,FullPart,Reg_Temp) Values(@NemployeeID, @NemployeeLOC, @NemployeeName, @NemployeeTitle, @NemployeeDeptID, @NemployeeHireDate, @NemployeeSupervisorName, @EMPLOYEETYPE, @EMPLOYEETYPE)", MainTable);
+                            command.CommandText = string.Format("insert into {0}  (EmployeeID,Location,Name,Title,DeptID,HireDate,SupervisorName,FullPart,Reg_Temp,EmpGroup,Shift,Work_Center,CostCenter) Values( @NemployeeID, @NemployeeLOC, @NemployeeName, @NemployeeTitle, @NemployeeDeptID, @NemployeeHireDate, @NemployeeSupervisorName, @EMPLOYEETYPE, @EMPLOYEETYPE1, '','','','')", MainTable);
                             command.Parameters.AddWithValue("@NemployeeID", NemployeeID);
                             command.Parameters.AddWithValue("@NemployeeLOC", NemployeeLOC);
                             command.Parameters.AddWithValue("@NemployeeName", NemployeeName);
@@ -422,7 +423,7 @@ namespace EmployeeManager
                             command.Parameters.AddWithValue("@NemployeeSupervisorName", NemployeeSupervisorName);
                             command.Parameters.AddWithValue("@MainTable", MainTable);
                             command.Parameters.AddWithValue("@EMPLOYEETYPE", EMPLOYEETYPE);
-                            command.Parameters.AddWithValue("@EMPLOYEETYPE", EMPLOYEETYPE);
+                            command.Parameters.AddWithValue("@EMPLOYEETYPE1", EMPLOYEETYPE);
 
                             connection.Open();
 
@@ -491,8 +492,23 @@ namespace EmployeeManager
                 int Info; int c = 0;
                 NemployeeName = gridView1.GetRowCellDisplayText(i, gridView1.Columns["Payroll Name"]);
                 c = NemployeeName.Length;
-                NemployeeName = NemployeeName.Remove(c, 1);
-                NemployeeName = RemoveWhitespace(NemployeeName);
+                var a = NemployeeName.IndexOf(" ").ToString();
+                var f = NemployeeName.IndexOf(",");
+                var b = NemployeeName.LastIndexOf(" ").ToString();
+                var g = NemployeeName.LastIndexOf(".").ToString();
+                var d = NemployeeName.Remove(0, Convert.ToInt32(b));
+                d = RemoveWhitespace(d);
+                var e = d.Length;
+                if (a != "0" && a!=b && e==1) { NemployeeName = NemployeeName.Remove(c-1, 1); }
+                if (a != "0" && a != b && e==2 && g!="-1") { NemployeeName = NemployeeName.Remove(c - 2, 2); }
+                if (e == 1) { NemployeeName = RemoveWhitespace(NemployeeName); }
+                else { NemployeeName = NemployeeName.Remove(f + 1, 1); }
+                var h = NemployeeName.LastIndexOf(" ");
+                if (e == 2 && g!="-1")
+                {
+                    NemployeeName = NemployeeName.Remove(h, 1);
+                    NemployeeName = RemoveWhitespace(NemployeeName);
+                }
                 NemployeeID = gridView1.GetRowCellDisplayText(i, gridView1.Columns["File Number"]);
                 NemployeeID = NemployeeID.Remove(0, 1);
                 NemployeeLOC = gridView1.GetRowCellDisplayText(i, gridView1.Columns["Department Number"]);
@@ -628,9 +644,11 @@ namespace EmployeeManager
                         return;
                     }
                 }
-
-                lblstat.Text = "Added Employee: Completed Without Error";
-                lblstat.Update();
+                if (i == gridView1.RowCount)
+                {
+                    lblstat.Text = "Added Employee: Completed Without Error";
+                    lblstat.Update();
+                }
             }
             lblstat.Text = "Added Employee: Completed Without Error";
             lblstat.Update();

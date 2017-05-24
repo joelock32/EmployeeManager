@@ -104,9 +104,17 @@
             this.employee_InformationTableAdapter = new EmployeeManager.QcrrDataSetTableAdapters.Employee_InformationTableAdapter();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.excelBindingSource = new System.Windows.Forms.BindingSource();
             this.excelDataSource3 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colFileNumber = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPayrollName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colReportsToLastName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colReportsToFirstName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDepartmentNumber = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHireDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colJobTitleDescription = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPositionStatus = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.excelBindingSource = new System.Windows.Forms.BindingSource();
             this.excelDataSource1 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.lblstat = new DevExpress.XtraEditors.LabelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
@@ -129,14 +137,6 @@
             this.colHireDate1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lblVersion = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.colFileNumber = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPayrollName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colReportsToLastName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colReportsToFirstName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDepartmentNumber = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colHireDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colJobTitleDescription = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPositionStatus = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJobTitle.Properties)).BeginInit();
@@ -155,8 +155,8 @@
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
@@ -542,10 +542,6 @@
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
-            // excelBindingSource
-            // 
-            this.excelBindingSource.DataSource = this.excelDataSource3;
-            // 
             // excelDataSource3
             // 
             this.excelDataSource3.FileName = "C:\\Users\\lockh_j.TRANSDEV.COM\\Documents\\Employee List\\Copy of etraveler_05_18_201" +
@@ -595,6 +591,66 @@
             this.colPositionStatus});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            // 
+            // colFileNumber
+            // 
+            this.colFileNumber.FieldName = "File Number";
+            this.colFileNumber.Name = "colFileNumber";
+            this.colFileNumber.Visible = true;
+            this.colFileNumber.VisibleIndex = 0;
+            // 
+            // colPayrollName
+            // 
+            this.colPayrollName.FieldName = "Payroll Name";
+            this.colPayrollName.Name = "colPayrollName";
+            this.colPayrollName.Visible = true;
+            this.colPayrollName.VisibleIndex = 1;
+            // 
+            // colReportsToLastName
+            // 
+            this.colReportsToLastName.FieldName = "Reports To Last Name";
+            this.colReportsToLastName.Name = "colReportsToLastName";
+            this.colReportsToLastName.Visible = true;
+            this.colReportsToLastName.VisibleIndex = 2;
+            // 
+            // colReportsToFirstName
+            // 
+            this.colReportsToFirstName.FieldName = "Reports To First Name";
+            this.colReportsToFirstName.Name = "colReportsToFirstName";
+            this.colReportsToFirstName.Visible = true;
+            this.colReportsToFirstName.VisibleIndex = 3;
+            // 
+            // colDepartmentNumber
+            // 
+            this.colDepartmentNumber.FieldName = "Department Number";
+            this.colDepartmentNumber.Name = "colDepartmentNumber";
+            this.colDepartmentNumber.Visible = true;
+            this.colDepartmentNumber.VisibleIndex = 4;
+            // 
+            // colHireDate
+            // 
+            this.colHireDate.FieldName = "Hire Date";
+            this.colHireDate.Name = "colHireDate";
+            this.colHireDate.Visible = true;
+            this.colHireDate.VisibleIndex = 5;
+            // 
+            // colJobTitleDescription
+            // 
+            this.colJobTitleDescription.FieldName = "Job Title Description";
+            this.colJobTitleDescription.Name = "colJobTitleDescription";
+            this.colJobTitleDescription.Visible = true;
+            this.colJobTitleDescription.VisibleIndex = 6;
+            // 
+            // colPositionStatus
+            // 
+            this.colPositionStatus.FieldName = "Position Status";
+            this.colPositionStatus.Name = "colPositionStatus";
+            this.colPositionStatus.Visible = true;
+            this.colPositionStatus.VisibleIndex = 7;
+            // 
+            // excelBindingSource
+            // 
+            this.excelBindingSource.DataSource = this.excelDataSource3;
             // 
             // excelDataSource1
             // 
@@ -870,67 +926,11 @@
             this.simpleButton4.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
-            // colFileNumber
-            // 
-            this.colFileNumber.FieldName = "File Number";
-            this.colFileNumber.Name = "colFileNumber";
-            this.colFileNumber.Visible = true;
-            this.colFileNumber.VisibleIndex = 0;
-            // 
-            // colPayrollName
-            // 
-            this.colPayrollName.FieldName = "Payroll Name";
-            this.colPayrollName.Name = "colPayrollName";
-            this.colPayrollName.Visible = true;
-            this.colPayrollName.VisibleIndex = 1;
-            // 
-            // colReportsToLastName
-            // 
-            this.colReportsToLastName.FieldName = "Reports To Last Name";
-            this.colReportsToLastName.Name = "colReportsToLastName";
-            this.colReportsToLastName.Visible = true;
-            this.colReportsToLastName.VisibleIndex = 2;
-            // 
-            // colReportsToFirstName
-            // 
-            this.colReportsToFirstName.FieldName = "Reports To First Name";
-            this.colReportsToFirstName.Name = "colReportsToFirstName";
-            this.colReportsToFirstName.Visible = true;
-            this.colReportsToFirstName.VisibleIndex = 3;
-            // 
-            // colDepartmentNumber
-            // 
-            this.colDepartmentNumber.FieldName = "Department Number";
-            this.colDepartmentNumber.Name = "colDepartmentNumber";
-            this.colDepartmentNumber.Visible = true;
-            this.colDepartmentNumber.VisibleIndex = 4;
-            // 
-            // colHireDate
-            // 
-            this.colHireDate.FieldName = "Hire Date";
-            this.colHireDate.Name = "colHireDate";
-            this.colHireDate.Visible = true;
-            this.colHireDate.VisibleIndex = 5;
-            // 
-            // colJobTitleDescription
-            // 
-            this.colJobTitleDescription.FieldName = "Job Title Description";
-            this.colJobTitleDescription.Name = "colJobTitleDescription";
-            this.colJobTitleDescription.Visible = true;
-            this.colJobTitleDescription.VisibleIndex = 6;
-            // 
-            // colPositionStatus
-            // 
-            this.colPositionStatus.FieldName = "Position Status";
-            this.colPositionStatus.Name = "colPositionStatus";
-            this.colPositionStatus.Visible = true;
-            this.colPositionStatus.VisibleIndex = 7;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 692);
+            this.ClientSize = new System.Drawing.Size(623, 344);
             this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.gridControl2);
@@ -963,8 +963,8 @@
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
