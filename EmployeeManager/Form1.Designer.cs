@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo1 = new DevExpress.DataAccess.Excel.FieldInfo();
@@ -97,12 +98,12 @@
             this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.hyperLinkEdit1 = new DevExpress.XtraEditors.HyperLinkEdit();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.radioGroup2 = new DevExpress.XtraEditors.RadioGroup();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.employee_InformationTableAdapter = new EmployeeManager.QcrrDataSetTableAdapters.Employee_InformationTableAdapter();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.excelDataSource3 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -114,11 +115,11 @@
             this.colHireDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colJobTitleDescription = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPositionStatus = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.excelBindingSource = new System.Windows.Forms.BindingSource();
+            this.excelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.excelDataSource1 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.lblstat = new DevExpress.XtraEditors.LabelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.excelBindingSource1 = new System.Windows.Forms.BindingSource();
+            this.excelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.excelDataSource2 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colEmployeeID1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -930,7 +931,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 344);
+            this.ClientSize = new System.Drawing.Size(623, 342);
             this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.gridControl2);
