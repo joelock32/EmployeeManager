@@ -21,7 +21,7 @@ namespace EmployeeManager
     public partial class Form1 : Form
     {
         static string CallingAppName = "EmployeeManager.exe"; //the name of this app used for login dll
-        public string MainTable = "qcrr.dbo.Employee_Information_Test";//Table being written to. (Change to qcrr.dbo.Employee_Information to go live)qcrr.dbo.Employee_Information_Test
+        public string MainTable = "qcrr.dbo.Employee_Information";//Table being written to. (Change to qcrr.dbo.Employee_Information to go live)qcrr.dbo.Employee_Information_Test
         public string BUTable = "qcrr.dbo.Employee_Information_BACKUP";//backup table(its cleared before each backup)
         public string BUTableCN = "qcrr.dbo.Employee_Information_china";//backup table(its cleared before each backup)
         const String ConnStr = "Data Source=etrav-hack;Initial Catalog=qcrr;Persist Security Info=True;User ID=Application;Password=noitacilppa";//US
@@ -139,6 +139,7 @@ namespace EmployeeManager
             if (dt.Rows[0][0].ToString() == "0")
             {
 
+                NemployeeHireDate=(Convert.ToDateTime(NemployeeHireDate)).ToShortDateString();
                 //string newemployee = string.Format("insert into {9} (EmployeeID,Location,Name,Title,DeptID,HireDate,SupervisorName,FullPart,Reg_Temp) Values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", NemployeeID, NemployeeLOC, NemployeeName, NemployeeTitle, NemployeeDeptID, NemployeeHireDate, NemployeeSupervisorName, EMPLOYEETYPE, EMPLOYEETYPE, MainTable);
                 try
                 {
@@ -150,7 +151,7 @@ namespace EmployeeManager
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
                         SqlCommand command = connection.CreateCommand();
-                        command.CommandText = "insert into @MainTable  (EmployeeID,Location,Name,Title,DeptID,HireDate,SupervisorName,FullPart,Reg_Temp) Values(@NemployeeID, @NemployeeLOC, @NemployeeName, @NemployeeTitle, @NemployeeDeptID, @NemployeeHireDate, @NemployeeSupervisorName, @EMPLOYEETYPE, @EMPLOYEETYPE)";
+                        command.CommandText = string.Format("insert into {0}  (EmployeeID,Location,Name,Title,DeptID,HireDate,SupervisorName,FullPart,Reg_Temp,EmpGroup,Shift,Work_Center,CostCenter) Values( @NemployeeID, @NemployeeLOC, @NemployeeName, @NemployeeTitle, @NemployeeDeptID, @NemployeeHireDate, @NemployeeSupervisorName, @EMPLOYEETYPE, @EMPLOYEETYPE1, '','','','')", MainTable);
                         command.Parameters.AddWithValue("@NemployeeID", NemployeeID);
                         command.Parameters.AddWithValue("@NemployeeLOC", NemployeeLOC);
                         command.Parameters.AddWithValue("@NemployeeName", NemployeeName);
@@ -160,12 +161,14 @@ namespace EmployeeManager
                         command.Parameters.AddWithValue("@NemployeeSupervisorName", NemployeeSupervisorName);
                         command.Parameters.AddWithValue("@MainTable", MainTable);
                         command.Parameters.AddWithValue("@EMPLOYEETYPE", EMPLOYEETYPE);
-                        command.Parameters.AddWithValue("@EMPLOYEETYPE", EMPLOYEETYPE);
+                        command.Parameters.AddWithValue("@EMPLOYEETYPE1", EMPLOYEETYPE);
 
                         connection.Open();
 
                         command.ExecuteNonQuery();
                         connection.Close();
+                        lblstat.Text = string.Format("Upload of {0} Succsesful!", NemployeeName);
+                        lblstat.Update();
                     }
                 }
 
@@ -190,7 +193,7 @@ namespace EmployeeManager
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
                         SqlCommand command = connection.CreateCommand();
-                        command.CommandText = "update  @MainTable set EmployeeID=@NemployeeID,Location=@NemployeeLOC,Name=@NemployeeName,Title=@NemployeeTitle,DeptID=@NemployeeDeptID,HireDate=@NemployeeHireDate,SupervisorName=@NemployeeSupervisorName where EmployeeID=@NemployeeID ";
+                        command.CommandText = string.Format("update {0} set EmployeeID=@NemployeeID,Location=@NemployeeLOC,Name=@NemployeeName,Title=@NemployeeTitle,DeptID=@NemployeeDeptID,HireDate=@NemployeeHireDate,SupervisorName=@NemployeeSupervisorName ,EmpGroup='',Shift='',Work_Center='',CostCenter='' where EmployeeID=@NemployeeID", MainTable);
                         command.Parameters.AddWithValue("@NemployeeID", NemployeeID);
                         command.Parameters.AddWithValue("@NemployeeLOC", NemployeeLOC);
                         command.Parameters.AddWithValue("@NemployeeName", NemployeeName);
@@ -204,6 +207,8 @@ namespace EmployeeManager
 
                         command.ExecuteNonQuery();
                         connection.Close();
+                        lblstat.Text = string.Format("Upload of {0} Succsesful!", NemployeeName);
+                        lblstat.Update();
                     }
 
 
@@ -434,7 +439,7 @@ namespace EmployeeManager
 
                     }
                     upload = false;
-                    lblstat.Text = string.Format("Upload of{0} Succsesful!", NemployeeName);
+                    lblstat.Text = string.Format("Upload of {0} Succsesful!", NemployeeName);
                     lblstat.Update();
                     //return;
                 }

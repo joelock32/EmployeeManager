@@ -321,6 +321,7 @@
             this.txtDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.txtDate.Properties.Mask.EditMask = "";
             this.txtDate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.txtDate.Properties.MaxValue = new System.DateTime(9999, 12, 31, 0, 0, 0, 0);
             this.txtDate.Size = new System.Drawing.Size(163, 20);
             this.txtDate.TabIndex = 8;
             this.txtDate.EditValueChanged += new System.EventHandler(this.txtDate_EditValueChanged);
