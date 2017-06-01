@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo1 = new DevExpress.DataAccess.Excel.FieldInfo();
@@ -83,7 +82,6 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtBoss = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.txtDate = new DevExpress.XtraEditors.DateEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.txtDeptID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
@@ -98,12 +96,12 @@
             this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.hyperLinkEdit1 = new DevExpress.XtraEditors.HyperLinkEdit();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.radioGroup2 = new DevExpress.XtraEditors.RadioGroup();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.employee_InformationTableAdapter = new EmployeeManager.QcrrDataSetTableAdapters.Employee_InformationTableAdapter();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.excelDataSource3 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -115,11 +113,11 @@
             this.colHireDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colJobTitleDescription = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPositionStatus = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.excelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.excelBindingSource = new System.Windows.Forms.BindingSource();
             this.excelDataSource1 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.lblstat = new DevExpress.XtraEditors.LabelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.excelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.excelBindingSource1 = new System.Windows.Forms.BindingSource();
             this.excelDataSource2 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colEmployeeID1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -138,14 +136,13 @@
             this.colHireDate1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lblVersion = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.txtDate = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJobTitle.Properties)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMiddleName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBoss.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDeptID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLOC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmployeeID.Properties)).BeginInit();
@@ -161,6 +158,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // txtFirstName
@@ -303,28 +302,6 @@
             this.labelControl6.Size = new System.Drawing.Size(56, 15);
             this.labelControl6.TabIndex = 9;
             this.labelControl6.Text = "Hire Date:";
-            // 
-            // txtDate
-            // 
-            this.txtDate.EditValue = null;
-            this.txtDate.Location = new System.Drawing.Point(65, 133);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDate.Properties.Appearance.Options.UseFont = true;
-            this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.Properties.DisplayFormat.FormatString = "";
-            this.txtDate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtDate.Properties.EditFormat.FormatString = "";
-            this.txtDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtDate.Properties.Mask.EditMask = "";
-            this.txtDate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtDate.Properties.MaxValue = new System.DateTime(9999, 12, 31, 0, 0, 0, 0);
-            this.txtDate.Size = new System.Drawing.Size(163, 20);
-            this.txtDate.TabIndex = 8;
-            this.txtDate.EditValueChanged += new System.EventHandler(this.txtDate_EditValueChanged);
             // 
             // labelControl7
             // 
@@ -928,6 +905,27 @@
             this.simpleButton4.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
+            // txtDate
+            // 
+            this.txtDate.EditValue = new System.DateTime(2017, 5, 31, 0, 0, 0, 0);
+            this.txtDate.Location = new System.Drawing.Point(65, 133);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.Properties.Appearance.Options.UseFont = true;
+            this.txtDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDate.Properties.DisplayFormat.FormatString = "";
+            this.txtDate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtDate.Properties.EditFormat.FormatString = "";
+            this.txtDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtDate.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.txtDate.Size = new System.Drawing.Size(163, 20);
+            this.txtDate.TabIndex = 8;
+            this.txtDate.EditValueChanged += new System.EventHandler(this.txtDate_EditValueChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -953,8 +951,6 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMiddleName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBoss.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDeptID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLOC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmployeeID.Properties)).EndInit();
@@ -970,6 +966,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -986,7 +984,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.DateEdit txtDate;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.TextEdit txtDeptID;
         private DevExpress.XtraEditors.LabelControl labelControl8;
@@ -1044,6 +1041,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colHireDate;
         private DevExpress.XtraGrid.Columns.GridColumn colJobTitleDescription;
         private DevExpress.XtraGrid.Columns.GridColumn colPositionStatus;
+        private DevExpress.XtraEditors.DateEdit txtDate;
     }
 }
 
