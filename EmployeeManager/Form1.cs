@@ -1031,6 +1031,7 @@ namespace EmployeeManager
         {
             NemployeeLName = txtLastName.Text;
             if(NemployeeLName.Contains(" ") && apostcheck==true) { NemployeeLName = NemployeeLName.Replace(" ", "'"); txtLastName.Text = NemployeeLName; }
+            if (NemployeeLName.Contains(",")) { txtLastName.Text = NemployeeLName.Replace(",", ""); }
         }
 
         private void txtJobTitle_EditValueChanged(object sender, EventArgs e)
@@ -1065,7 +1066,7 @@ namespace EmployeeManager
 
         private void txtEmployeeID_EditValueChanged(object sender, EventArgs e)
         {
-           
+            RefreshForm();
             int c = 0;
             lblstat.Text = "";
             NemployeeID = txtEmployeeID.Text;
@@ -1104,7 +1105,7 @@ namespace EmployeeManager
                             if (NemployeeName.Contains("'")) { apostcheck = true; } else { apostcheck = false; }
                             if (v > -1|| NemployeeName.Contains("Jr") || NemployeeName.Contains("Sr")) txtLastName.Text = NemployeeName.Substring(0, x);
                             if (v == -1) { txtLastName.Text = NemployeeName.Substring(0, x); }
-                            if (v > -1 && !(NemployeeName.Contains("Jr")) && !(NemployeeName.Contains("Sr"))) { txtMiddleName.Text = NemployeeName.Substring(v+1, v+1); txtLastName.Text = NemployeeName.Substring(0, v); } else { txtMiddleName.Text = ""; }
+                            if (v > -1 && !(NemployeeName.Contains("Jr")) && !(NemployeeName.Contains("Sr")) && v!=2 && (v-x)>0) { txtMiddleName.Text = NemployeeName.Substring(x+1, v-x); txtLastName.Text = NemployeeName.Substring(0, v); txtLastName.Text = NemployeeLName.Replace(NemployeeMName,""); } else { txtMiddleName.Text = ""; }
                             txtFirstName.Text = NemployeeName.Remove(0, x+1);
                             int namecheck = NemployeeFName.Length + NemployeeMName.Length + NemployeeLName.Length +1;
                             
@@ -1179,7 +1180,9 @@ namespace EmployeeManager
 
         private void txtMiddleName_EditValueChanged(object sender, EventArgs e)
         {
+            if (txtMiddleName.Text == "") { return; }
             NemployeeMName = txtMiddleName.Text;
+            txtLastName.Text = NemployeeLName.Replace(NemployeeMName, "");
         }
 
         private void txtBoss_SelectedIndexChanged(object sender, EventArgs e)
@@ -1242,18 +1245,28 @@ namespace EmployeeManager
         {
 
             UncheckAll(this);
-            ClearTextBoxes();
+            //ClearTextBoxes();
             txtBoss.Text = "";
             txtDate.Text = "";
             txtDeptID.Text = "";
-            txtEmployeeID.Text = "";
+            //txtEmployeeID.Text = "";
             txtFirstName.Text = "";
             txtJobTitle.Text = "";
             txtLastName.Text = "";
             txtLOC.Text = "";
             txtMiddleName.Text = "";
-            
-            
+            NemployeeName = "";
+            NemployeeID = "";
+            NemployeeLOC = "";
+            NemployeeTitle = "";
+            NemployeeDeptID = "";
+            NemployeeHireDate = "";
+            NemployeeSupervisorName = "";
+            NemployeeFName = "";
+            NemployeeMName = "";
+            NemployeeLName = "";
+            NPostionStatus = "";
+
         }
 
         private void ClearTextBoxes()
