@@ -460,7 +460,7 @@ namespace EmployeeManager
                 lblstat.Text = string.Format("Upload of {0} Succsesful!", xfile);
                 lblstat.Update();
             }
-            LOCAREA = "36"; //default
+            LOCAREA = "03"; //default
         }
 
         public void handeldataexcel()//us&china excel file types
@@ -1200,7 +1200,7 @@ namespace EmployeeManager
 
         private void radioGroup2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (radioGroup2.SelectedIndex == 0) { LOCAREA = "US"; txtLOC.Text = "36"; }
+            if (radioGroup2.SelectedIndex == 0) { LOCAREA = "US"; txtLOC.Text = "03"; }
             if (radioGroup2.SelectedIndex == 1) { LOCAREA = "CHINA"; txtLOC.Text = "16"; }
         }
 
@@ -1209,7 +1209,7 @@ namespace EmployeeManager
             try
             {
                 if (Convert.ToInt32(employeeID) > 80000) { LOCAREA = "16";  radioGroup2.EditValue = 1; ETRAV = ConnStr1; txtLOC.Text = LOCAREA; radioGroup2.Update(); }
-                else { LOCAREA = "36"; radioGroup2.EditValue = 0; ETRAV = ConnStr; txtLOC.Text = LOCAREA; radioGroup2.Update(); }
+                else { LOCAREA = "03"; radioGroup2.EditValue = 0; ETRAV = ConnStr; txtLOC.Text = LOCAREA; radioGroup2.Update(); }
             }
             catch { MessageBox.Show("EmployeeID can not be Null!"); }
         }
@@ -1313,7 +1313,7 @@ namespace EmployeeManager
             }
 
 
-            if (LOCAREA == "US"|| LOCAREA == "36")
+            if (LOCAREA == "US"|| LOCAREA == "03")
             {
                 //clear table (US/CHINA)
                 //string sqlTrunc = "TRUNCATE TABLE " + BUTable;
