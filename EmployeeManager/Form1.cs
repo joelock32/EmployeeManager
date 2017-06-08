@@ -21,7 +21,7 @@ namespace EmployeeManager
     public partial class Form1 : Form
     {
         static string CallingAppName = "EmployeeManager.exe"; //the name of this app used for login dll
-        public string MainTable = "qcrr.dbo.Employee_Information_Test";//Table being written to. (Change to qcrr.dbo.Employee_Information to go live)qcrr.dbo.Employee_Information_Test
+        public string MainTable = "qcrr.dbo.Employee_Information";//Table being written to. (Change to qcrr.dbo.Employee_Information to go live)qcrr.dbo.Employee_Information_Test
         public string BUTable = "qcrr.dbo.Employee_Information_BACKUP";//backup table(its cleared before each backup)
         public string BUTableCN = "qcrr.dbo.Employee_Information_china";//backup table(its cleared before each backup)
         const String ConnStr = "Data Source=etrav-hack;Initial Catalog=qcrr;Persist Security Info=True;User ID=Application;Password=noitacilppa";//US
@@ -827,6 +827,7 @@ namespace EmployeeManager
         }
         private bool ConfirmUser()
         {
+          
             getlogon getin = new getlogon();
             string value = "Employee ID";
             //InputBox.Show("New document", "New document name:", ref value);
@@ -864,7 +865,7 @@ namespace EmployeeManager
             else { return state = false; }
 
             //make input box asking for password
-            string value2 = "Password";
+            string value2 = "";
 
             if (InputBoxPass("Password?", "Please Enter your Password ", ref value2) == DialogResult.OK)//create option to get new password
             {
@@ -1105,6 +1106,7 @@ namespace EmployeeManager
                             if (NemployeeName.Contains("'")) { apostcheck = true; } else { apostcheck = false; }
                             if (v > -1|| NemployeeName.Contains("Jr") || NemployeeName.Contains("Sr")) txtLastName.Text = NemployeeName.Substring(0, x);
                             if (v == -1) { txtLastName.Text = NemployeeName.Substring(0, x); }
+
                             if (v > -1 && !(NemployeeName.Contains("Jr")) && !(NemployeeName.Contains("Sr")) && v!=2 && (v-x)>0) { txtMiddleName.Text = NemployeeName.Substring(x+1, v-x); txtLastName.Text = NemployeeName.Substring(0, v); txtLastName.Text = NemployeeLName.Replace(NemployeeMName,""); } else { txtMiddleName.Text = ""; }
                             txtFirstName.Text = NemployeeName.Remove(0, x+1);
                             int namecheck = NemployeeFName.Length + NemployeeMName.Length + NemployeeLName.Length +1;

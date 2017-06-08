@@ -207,10 +207,13 @@
   <metadata name="excelDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1254, 17</value>
   </metadata>
+  <metadata name="excelDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1254, 17</value>
+  </metadata>
   <data name="excelDataSource2.ResultSchemaSerializable" xml:space="preserve">
     <value>PFZpZXc+PEZpZWxkIE5hbWU9IkVtcGxveWVlSUQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTG9jYXRpb24iIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUaXRsZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXB0SUQiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iRW1wR3JvdXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU3VwZXJ2aXNvck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRnVsbFBhcnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2hpZnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVnX1RlbXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iV29ya19DZW50ZXIiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iQ29zdENlbnRlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJyb3dndWlkIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhpcmVEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48L1ZpZXc+</value>
   </data>
-  <data name="csvSourceOptions1.Encoding" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="csvSourceOptions2.Encoding" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAEAQAAABhTeXN0ZW0uVGV4dC5VVEY4RW5jb2RpbmcLAAAAEmVtaXRVVEY4
         SWRlbnRpZmllchBpc1Rocm93RXhjZXB0aW9uCm1fY29kZVBhZ2UIZGF0YUl0ZW0PZW5jb2RlckZhbGxi

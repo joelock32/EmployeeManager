@@ -29,47 +29,47 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo1 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo2 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo3 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo4 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo5 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo6 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo7 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo8 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings1 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
-            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions1 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings1);
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo9 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo10 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo11 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo12 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo13 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo14 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo15 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo16 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo17 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo18 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo19 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo20 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo21 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings2 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
-            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions2 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings2);
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo22 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo23 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo24 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo25 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo26 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo27 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo28 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo29 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo30 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo31 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo32 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo33 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo34 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo35 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.CsvSourceOptions csvSourceOptions1 = new DevExpress.DataAccess.Excel.CsvSourceOptions();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo36 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo37 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo38 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo39 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo40 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo41 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo42 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo43 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings3 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
+            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions3 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings3);
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo44 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo45 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo46 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo47 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo48 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo49 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo50 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo51 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo52 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo53 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo54 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo55 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo56 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings4 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
+            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions4 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings4);
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo57 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo58 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo59 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo60 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo61 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo62 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo63 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo64 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo65 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo66 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo67 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo68 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo69 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.FieldInfo fieldInfo70 = new DevExpress.DataAccess.Excel.FieldInfo();
+            DevExpress.DataAccess.Excel.CsvSourceOptions csvSourceOptions2 = new DevExpress.DataAccess.Excel.CsvSourceOptions();
             this.txtFirstName = new DevExpress.XtraEditors.TextEdit();
             this.txtLastName = new DevExpress.XtraEditors.TextEdit();
             this.txtJobTitle = new DevExpress.XtraEditors.TextEdit();
@@ -82,6 +82,7 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtBoss = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.txtDate = new DevExpress.XtraEditors.DateEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.txtDeptID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
@@ -136,13 +137,14 @@
             this.colHireDate1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lblVersion = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.txtDate = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJobTitle.Properties)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMiddleName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBoss.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDeptID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLOC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmployeeID.Properties)).BeginInit();
@@ -158,8 +160,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // txtFirstName
@@ -303,6 +303,27 @@
             this.labelControl6.TabIndex = 9;
             this.labelControl6.Text = "Hire Date:";
             // 
+            // txtDate
+            // 
+            this.txtDate.EditValue = new System.DateTime(2017, 5, 31, 0, 0, 0, 0);
+            this.txtDate.Location = new System.Drawing.Point(65, 133);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.Properties.Appearance.Options.UseFont = true;
+            this.txtDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDate.Properties.DisplayFormat.FormatString = "";
+            this.txtDate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtDate.Properties.EditFormat.FormatString = "";
+            this.txtDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtDate.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.txtDate.Size = new System.Drawing.Size(163, 20);
+            this.txtDate.TabIndex = 8;
+            this.txtDate.EditValueChanged += new System.EventHandler(this.txtDate_EditValueChanged);
+            // 
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -365,13 +386,13 @@
             // 
             // labelControl11
             // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl11.Appearance.Options.UseFont = true;
             this.behaviorManager1.SetBehaviors(this.labelControl11, new DevExpress.Utils.Behaviors.Behavior[] {
             ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.Utils.Behaviors.Common.FileIconBehavior.Create(typeof(DevExpress.XtraEditors.Behaviors.FileIconBehaviorSourceForLabelControl), DevExpress.Utils.Behaviors.Common.FileIconSize.Small, ((System.Drawing.Image)(resources.GetObject("labelControl11.Behaviors"))), null)))});
-            this.labelControl11.Location = new System.Drawing.Point(150, 185);
+            this.labelControl11.Location = new System.Drawing.Point(3, 211);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(104, 15);
+            this.labelControl11.Size = new System.Drawing.Size(108, 13);
             this.labelControl11.TabIndex = 18;
             this.labelControl11.Text = "Enter an ID# to search";
             // 
@@ -393,7 +414,7 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton1.ImageOptions.ImageUri.Uri = "AddNewDataSource";
@@ -409,7 +430,7 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton2.ImageOptions.ImageUri.Uri = "DeleteDataSource";
@@ -440,7 +461,7 @@
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton3.Appearance.Options.UseFont = true;
             this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton3.ImageOptions.ImageUri.Uri = "Up";
@@ -503,10 +524,10 @@
             // 
             this.sqlDataSource1.ConnectionName = "etraveler02.Qcrr.Application";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery1.Name = "Query";
-            customSqlQuery1.Sql = "select distinct SupervisorName from dbo.Employee_Information";
+            customSqlQuery2.Name = "Query";
+            customSqlQuery2.Sql = "select distinct SupervisorName from dbo.Employee_Information";
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery1});
+            customSqlQuery2});
             this.sqlDataSource1.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZ" +
     "T0iU3VwZXJ2aXNvck5hbWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==";
             // 
@@ -527,35 +548,35 @@
     "7_10_01_27_AM.xlsx";
             this.excelDataSource3.Name = "excelDataSource3";
             this.excelDataSource3.ResultSchemaSerializable = resources.GetString("excelDataSource3.ResultSchemaSerializable");
-            fieldInfo1.Name = "File Number";
-            fieldInfo1.Type = typeof(string);
-            fieldInfo2.Name = "Payroll Name";
-            fieldInfo2.Type = typeof(string);
-            fieldInfo3.Name = "Reports To Last Name";
-            fieldInfo3.Type = typeof(string);
-            fieldInfo4.Name = "Reports To First Name";
-            fieldInfo4.Type = typeof(string);
-            fieldInfo5.Name = "Department Number";
-            fieldInfo5.Type = typeof(string);
-            fieldInfo6.Name = "Hire Date";
-            fieldInfo6.Type = typeof(System.DateTime);
-            fieldInfo7.Name = "Job Title Description";
-            fieldInfo7.Type = typeof(string);
-            fieldInfo8.Name = "Position Status";
-            fieldInfo8.Type = typeof(string);
+            fieldInfo36.Name = "File Number";
+            fieldInfo36.Type = typeof(string);
+            fieldInfo37.Name = "Payroll Name";
+            fieldInfo37.Type = typeof(string);
+            fieldInfo38.Name = "Reports To Last Name";
+            fieldInfo38.Type = typeof(string);
+            fieldInfo39.Name = "Reports To First Name";
+            fieldInfo39.Type = typeof(string);
+            fieldInfo40.Name = "Department Number";
+            fieldInfo40.Type = typeof(string);
+            fieldInfo41.Name = "Hire Date";
+            fieldInfo41.Type = typeof(System.DateTime);
+            fieldInfo42.Name = "Job Title Description";
+            fieldInfo42.Type = typeof(string);
+            fieldInfo43.Name = "Position Status";
+            fieldInfo43.Type = typeof(string);
             this.excelDataSource3.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
-            fieldInfo1,
-            fieldInfo2,
-            fieldInfo3,
-            fieldInfo4,
-            fieldInfo5,
-            fieldInfo6,
-            fieldInfo7,
-            fieldInfo8});
-            excelWorksheetSettings1.CellRange = null;
-            excelWorksheetSettings1.WorksheetName = "Data";
-            excelSourceOptions1.ImportSettings = excelWorksheetSettings1;
-            this.excelDataSource3.SourceOptions = excelSourceOptions1;
+            fieldInfo36,
+            fieldInfo37,
+            fieldInfo38,
+            fieldInfo39,
+            fieldInfo40,
+            fieldInfo41,
+            fieldInfo42,
+            fieldInfo43});
+            excelWorksheetSettings3.CellRange = null;
+            excelWorksheetSettings3.WorksheetName = "Data";
+            excelSourceOptions3.ImportSettings = excelWorksheetSettings3;
+            this.excelDataSource3.SourceOptions = excelSourceOptions3;
             // 
             // gridView1
             // 
@@ -637,50 +658,50 @@
     "er\\EmployeeManager\\bin\\Debug\\US Employee Information Book.xlsx";
             this.excelDataSource1.Name = "excelDataSource1";
             this.excelDataSource1.ResultSchemaSerializable = resources.GetString("excelDataSource1.ResultSchemaSerializable");
-            fieldInfo9.Name = "EmployeeID";
-            fieldInfo9.Type = typeof(string);
-            fieldInfo10.Name = "Location";
-            fieldInfo10.Type = typeof(string);
-            fieldInfo11.Name = "Name";
-            fieldInfo11.Type = typeof(string);
-            fieldInfo12.Name = "Title";
-            fieldInfo12.Type = typeof(string);
-            fieldInfo13.Name = "DeptID";
-            fieldInfo13.Type = typeof(string);
-            fieldInfo14.Name = "EmpGroup";
-            fieldInfo14.Type = typeof(string);
-            fieldInfo15.Name = "SupervisorName";
-            fieldInfo15.Type = typeof(string);
-            fieldInfo16.Name = "FullPart";
-            fieldInfo16.Type = typeof(string);
-            fieldInfo17.Name = "Shift";
-            fieldInfo17.Type = typeof(string);
-            fieldInfo18.Name = "Reg_Temp";
-            fieldInfo18.Type = typeof(string);
-            fieldInfo19.Name = "Work_Center";
-            fieldInfo19.Type = typeof(string);
-            fieldInfo20.Name = "CostCenter";
-            fieldInfo20.Type = typeof(string);
-            fieldInfo21.Name = "HireDate";
-            fieldInfo21.Type = typeof(string);
+            fieldInfo44.Name = "EmployeeID";
+            fieldInfo44.Type = typeof(string);
+            fieldInfo45.Name = "Location";
+            fieldInfo45.Type = typeof(string);
+            fieldInfo46.Name = "Name";
+            fieldInfo46.Type = typeof(string);
+            fieldInfo47.Name = "Title";
+            fieldInfo47.Type = typeof(string);
+            fieldInfo48.Name = "DeptID";
+            fieldInfo48.Type = typeof(string);
+            fieldInfo49.Name = "EmpGroup";
+            fieldInfo49.Type = typeof(string);
+            fieldInfo50.Name = "SupervisorName";
+            fieldInfo50.Type = typeof(string);
+            fieldInfo51.Name = "FullPart";
+            fieldInfo51.Type = typeof(string);
+            fieldInfo52.Name = "Shift";
+            fieldInfo52.Type = typeof(string);
+            fieldInfo53.Name = "Reg_Temp";
+            fieldInfo53.Type = typeof(string);
+            fieldInfo54.Name = "Work_Center";
+            fieldInfo54.Type = typeof(string);
+            fieldInfo55.Name = "CostCenter";
+            fieldInfo55.Type = typeof(string);
+            fieldInfo56.Name = "HireDate";
+            fieldInfo56.Type = typeof(string);
             this.excelDataSource1.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
-            fieldInfo9,
-            fieldInfo10,
-            fieldInfo11,
-            fieldInfo12,
-            fieldInfo13,
-            fieldInfo14,
-            fieldInfo15,
-            fieldInfo16,
-            fieldInfo17,
-            fieldInfo18,
-            fieldInfo19,
-            fieldInfo20,
-            fieldInfo21});
-            excelWorksheetSettings2.CellRange = null;
-            excelWorksheetSettings2.WorksheetName = "Sheet1";
-            excelSourceOptions2.ImportSettings = excelWorksheetSettings2;
-            this.excelDataSource1.SourceOptions = excelSourceOptions2;
+            fieldInfo44,
+            fieldInfo45,
+            fieldInfo46,
+            fieldInfo47,
+            fieldInfo48,
+            fieldInfo49,
+            fieldInfo50,
+            fieldInfo51,
+            fieldInfo52,
+            fieldInfo53,
+            fieldInfo54,
+            fieldInfo55,
+            fieldInfo56});
+            excelWorksheetSettings4.CellRange = null;
+            excelWorksheetSettings4.WorksheetName = "Sheet1";
+            excelSourceOptions4.ImportSettings = excelWorksheetSettings4;
+            this.excelDataSource1.SourceOptions = excelSourceOptions4;
             // 
             // lblstat
             // 
@@ -712,54 +733,54 @@
             this.excelDataSource2.FileName = "C:\\Users\\lockh_j.TRANSDEV.COM\\Documents\\Employee List\\Sheet1.csv";
             this.excelDataSource2.Name = "excelDataSource2";
             this.excelDataSource2.ResultSchemaSerializable = resources.GetString("excelDataSource2.ResultSchemaSerializable");
-            fieldInfo22.Name = "EmployeeID";
-            fieldInfo22.Type = typeof(string);
-            fieldInfo23.Name = "Location";
-            fieldInfo23.Type = typeof(double);
-            fieldInfo24.Name = "Name";
-            fieldInfo24.Type = typeof(string);
-            fieldInfo25.Name = "Title";
-            fieldInfo25.Type = typeof(string);
-            fieldInfo26.Name = "DeptID";
-            fieldInfo26.Type = typeof(double);
-            fieldInfo27.Name = "EmpGroup";
-            fieldInfo27.Type = typeof(string);
-            fieldInfo28.Name = "SupervisorName";
-            fieldInfo28.Type = typeof(string);
-            fieldInfo29.Name = "FullPart";
-            fieldInfo29.Type = typeof(string);
-            fieldInfo30.Name = "Shift";
-            fieldInfo30.Type = typeof(string);
-            fieldInfo31.Name = "Reg_Temp";
-            fieldInfo31.Type = typeof(string);
-            fieldInfo32.Name = "Work_Center";
-            fieldInfo32.Type = typeof(double);
-            fieldInfo33.Name = "CostCenter";
-            fieldInfo33.Type = typeof(string);
-            fieldInfo34.Name = "rowguid";
-            fieldInfo34.Type = typeof(string);
-            fieldInfo35.Name = "HireDate";
-            fieldInfo35.Type = typeof(System.DateTime);
+            fieldInfo57.Name = "EmployeeID";
+            fieldInfo57.Type = typeof(string);
+            fieldInfo58.Name = "Location";
+            fieldInfo58.Type = typeof(double);
+            fieldInfo59.Name = "Name";
+            fieldInfo59.Type = typeof(string);
+            fieldInfo60.Name = "Title";
+            fieldInfo60.Type = typeof(string);
+            fieldInfo61.Name = "DeptID";
+            fieldInfo61.Type = typeof(double);
+            fieldInfo62.Name = "EmpGroup";
+            fieldInfo62.Type = typeof(string);
+            fieldInfo63.Name = "SupervisorName";
+            fieldInfo63.Type = typeof(string);
+            fieldInfo64.Name = "FullPart";
+            fieldInfo64.Type = typeof(string);
+            fieldInfo65.Name = "Shift";
+            fieldInfo65.Type = typeof(string);
+            fieldInfo66.Name = "Reg_Temp";
+            fieldInfo66.Type = typeof(string);
+            fieldInfo67.Name = "Work_Center";
+            fieldInfo67.Type = typeof(double);
+            fieldInfo68.Name = "CostCenter";
+            fieldInfo68.Type = typeof(string);
+            fieldInfo69.Name = "rowguid";
+            fieldInfo69.Type = typeof(string);
+            fieldInfo70.Name = "HireDate";
+            fieldInfo70.Type = typeof(System.DateTime);
             this.excelDataSource2.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
-            fieldInfo22,
-            fieldInfo23,
-            fieldInfo24,
-            fieldInfo25,
-            fieldInfo26,
-            fieldInfo27,
-            fieldInfo28,
-            fieldInfo29,
-            fieldInfo30,
-            fieldInfo31,
-            fieldInfo32,
-            fieldInfo33,
-            fieldInfo34,
-            fieldInfo35});
-            csvSourceOptions1.Culture = new System.Globalization.CultureInfo("");
-            csvSourceOptions1.DetectNewlineType = true;
-            csvSourceOptions1.DetectValueSeparator = true;
-            csvSourceOptions1.Encoding = ((System.Text.Encoding)(resources.GetObject("csvSourceOptions1.Encoding")));
-            this.excelDataSource2.SourceOptions = csvSourceOptions1;
+            fieldInfo57,
+            fieldInfo58,
+            fieldInfo59,
+            fieldInfo60,
+            fieldInfo61,
+            fieldInfo62,
+            fieldInfo63,
+            fieldInfo64,
+            fieldInfo65,
+            fieldInfo66,
+            fieldInfo67,
+            fieldInfo68,
+            fieldInfo69,
+            fieldInfo70});
+            csvSourceOptions2.Culture = new System.Globalization.CultureInfo("");
+            csvSourceOptions2.DetectNewlineType = true;
+            csvSourceOptions2.DetectValueSeparator = true;
+            csvSourceOptions2.Encoding = ((System.Text.Encoding)(resources.GetObject("csvSourceOptions2.Encoding")));
+            this.excelDataSource2.SourceOptions = csvSourceOptions2;
             // 
             // gridView2
             // 
@@ -891,7 +912,7 @@
             // 
             // simpleButton4
             // 
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton4.Appearance.Options.UseFont = true;
             this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton4.ImageOptions.ImageUri.Uri = "Refresh";
@@ -905,31 +926,11 @@
             this.simpleButton4.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
-            // txtDate
-            // 
-            this.txtDate.EditValue = new System.DateTime(2017, 5, 31, 0, 0, 0, 0);
-            this.txtDate.Location = new System.Drawing.Point(65, 133);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDate.Properties.Appearance.Options.UseFont = true;
-            this.txtDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.Properties.DisplayFormat.FormatString = "";
-            this.txtDate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtDate.Properties.EditFormat.FormatString = "";
-            this.txtDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtDate.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtDate.Size = new System.Drawing.Size(163, 20);
-            this.txtDate.TabIndex = 8;
-            this.txtDate.EditValueChanged += new System.EventHandler(this.txtDate_EditValueChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(623, 342);
             this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.lblVersion);
@@ -942,6 +943,7 @@
             this.Controls.Add(this.radioGroup1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(639, 381);
             this.Name = "Form1";
             this.Text = "Employee Manager";
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).EndInit();
@@ -951,6 +953,8 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMiddleName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBoss.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDeptID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLOC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmployeeID.Properties)).EndInit();
@@ -966,8 +970,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.excelBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
