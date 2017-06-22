@@ -25,7 +25,7 @@ namespace EmployeeManager
         public string BUTable = "qcrr.dbo.Employee_Information_BACKUP";//backup table(its cleared before each backup)
         public string BUTableCN = "qcrr.dbo.Employee_Information_china";//backup table(its cleared before each backup)
         const String ConnStr = "Data Source=etrav-hack;Initial Catalog=qcrr;Persist Security Info=True;User ID=Application;Password=noitacilppa";//US
-        const String ConnStr1 = "Data Source=etrav-hack;Initial Catalog=qcrr;Persist Security Info=True;User ID=Application;Password=noitacilppa";//CHINA "was using as a test
+        const String ConnStr1 = "Data Source=cn_sql01;Initial Catalog=qcrr;Persist Security Info=True;User ID=Application;Password=noitacilppa";//CHINA 
         private string ETRAV = null;
         private string serverver;
         public string LoggedinEmployeeID { get; private set; }
@@ -140,7 +140,7 @@ namespace EmployeeManager
                     //bool success = mSQL.myInsert("Etrav-Hack", newemployee);
                     //if (success == true) { lblstat.Text = "Updated Employee: " + NemployeeName; RefreshForm(); } else { lblstat.Text = string.Format("Employee: {0} Not Updated. Check Entries", NemployeeName); }
 
-                    string connectionString = ConnStr;
+                    string connectionString = ETRAV;
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
                         SqlCommand command = connection.CreateCommand();
@@ -182,7 +182,7 @@ namespace EmployeeManager
                     //bool success = mSQL.myInsert("Etrav-Hack", newemployee);
                     //if (success == true) { lblstat.Text = "Updated Employee: " + NemployeeName; RefreshForm(); } else { lblstat.Text = string.Format("Employee: {0} Not Updated. Check Entries", NemployeeName); }
 
-                    string connectionString = ConnStr;
+                    string connectionString = ETRAV;
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
                         SqlCommand command = connection.CreateCommand();
@@ -279,7 +279,7 @@ namespace EmployeeManager
 
             if (xfile.Contains(".txt"))//upload a stupid text file
             {
-                LOCAREA = "16";
+                LOCAREA = "16"; ETRAV = ConnStr1;
                 //issue a backup
                 employBU();
                 string lineOfText;
@@ -353,7 +353,7 @@ namespace EmployeeManager
 
                     //update/insert row table
                     mySQL mSQL = new mySQL();
-                    SqlConnection SqlConn = new SqlConnection(ConnStr);
+                    SqlConnection SqlConn = new SqlConnection(ETRAV);
                     SqlConn.Open();
                     SqlDataAdapter sda = new SqlDataAdapter(string.Format("SELECT COUNT(*) FROM {1} where EmployeeID='{0}'", NemployeeID, MainTable), SqlConn);
                     DataTable dt = new DataTable();
@@ -369,7 +369,7 @@ namespace EmployeeManager
                             //lblstat.Update();
                         //}
 
-                        string connectionString = ConnStr;
+                        string connectionString = ETRAV;
                         using (SqlConnection connection = new SqlConnection(connectionString))
                         {
                             SqlCommand command = connection.CreateCommand();
@@ -405,7 +405,7 @@ namespace EmployeeManager
                        // SqlConn.Close();
 
 
-                        string connectionString = ConnStr;
+                        string connectionString = ETRAV;
                         using (SqlConnection connection = new SqlConnection(connectionString))
                         {
                             SqlCommand command = connection.CreateCommand();
@@ -432,6 +432,7 @@ namespace EmployeeManager
                     upload = false;
                     lblstat.Text = string.Format("Upload of {0} Succsesful!", NemployeeName);
                     lblstat.Update();
+                    ETRAV = ConnStr;
                     //return;
                 }
             }
@@ -537,7 +538,7 @@ namespace EmployeeManager
                         //if (radioGroup2.SelectedIndex == 0)
                         //{
                             //bool success = mSQL.myInsert("Etrav-Hack", S3);
-                            string connectionString = ConnStr;
+                            string connectionString = ETRAV;
                             using (SqlConnection connection = new SqlConnection(connectionString))
                             {
                                 SqlCommand command = connection.CreateCommand();
@@ -710,7 +711,7 @@ namespace EmployeeManager
                                 //lblstat.Update();
                             //}
 
-                            string connectionString = ConnStr;
+                            string connectionString = ETRAV;
                             using (SqlConnection connection = new SqlConnection(connectionString))
                             {
                                 SqlCommand command = connection.CreateCommand();
@@ -773,7 +774,7 @@ namespace EmployeeManager
                                 //lblstat.Text = "Added Employee: " + NemployeeName;
                                 //lblstat.Update();
                            // }
-                            string connectionString = ConnStr;
+                            string connectionString = ETRAV;
                             using (SqlConnection connection = new SqlConnection(connectionString))
                             {
                                 SqlCommand command = connection.CreateCommand();
@@ -1068,6 +1069,7 @@ namespace EmployeeManager
         private void txtEmployeeID_EditValueChanged(object sender, EventArgs e)
         {
             RefreshForm();
+            if (LOCAREA == "CHINA") { ETRAV = ConnStr1; } else { ETRAV = ConnStr; }
             int c = 0;
             lblstat.Text = "";
             NemployeeID = txtEmployeeID.Text;
@@ -1214,6 +1216,8 @@ namespace EmployeeManager
                 else { LOCAREA = "03"; radioGroup2.EditValue = 0; ETRAV = ConnStr; txtLOC.Text = LOCAREA; radioGroup2.Update(); }
             }
             catch { MessageBox.Show("EmployeeID can not be Null!"); }
+
+            if (LOCAREA == "CHINA") { ETRAV = ConnStr1; } else { ETRAV = ConnStr; }
         }
 
         public void CheckGetUpdates(Version cver)
