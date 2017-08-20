@@ -24,8 +24,8 @@ namespace EmployeeManager
         public string MainTable = "qcrr.dbo.Employee_Information";//Table being written to. (Change to qcrr.dbo.Employee_Information to go live)qcrr.dbo.Employee_Information_Test
         public string BUTable = "qcrr.dbo.Employee_Information_BACKUP";//backup table(its cleared before each backup)
         public string BUTableCN = "qcrr.dbo.Employee_Information_china";//backup table(its cleared before each backup)
-        const String ConnStr = "Data Source=etrav-hack;Initial Catalog=qcrr;Persist Security Info=True;User ID=Application;Password=noitacilppa";//US
-        const String ConnStr1 = "Data Source=cn_sql01;Initial Catalog=qcrr;Persist Security Info=True;User ID=Application;Password=noitacilppa";//CHINA 
+        const String ConnStr = "Data Source=etrav-hack;Initial Catalog=qcrr;Persist Security Info=True;User ID=youruserid;Password=yourpassword";//US
+        const String ConnStr1 = "Data Source=cn_sql01;Initial Catalog=qcrr;Persist Security Info=True;User ID=youruserid;Password=yourpassword";//CHINA 
         private string ETRAV = null;
         private string serverver;
         public string LoggedinEmployeeID { get; private set; }
